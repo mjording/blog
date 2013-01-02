@@ -1,10 +1,7 @@
 ---
 layout: page
-title: "TV"
+title: "Tv"
 description: ""
 group: public
 ---
 {% include JB/setup %}
-
-
-open gotham youtube channel
