@@ -1,6 +1,6 @@
 ---
 layout: page
-title: log
+title: ~
 tagline: pushed daily
 ---
 {% include JB/setup %}
