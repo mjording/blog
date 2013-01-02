@@ -1,7 +1,6 @@
 ---
 layout: page
-title: "TV"
+title: "Essential Ruby Rails"
 description: ""
-group: public
 ---
 {% include JB/setup %}

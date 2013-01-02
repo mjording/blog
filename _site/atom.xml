@@ -4,7 +4,7 @@
  <title>Open Gotham</title>
  <link href="http://opengotham.github.com/atom.xml" rel="self"/>
  <link href="http://opengotham.github.com"/>
- <updated>2013-01-01T22:52:59-05:00</updated>
+ <updated>2013-01-01T23:29:47-05:00</updated>
  <id>http://opengotham.github.com</id>
  <author>
    <name>Matthew Jording</name>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>twenty bakers doz.</title>
-   <link href="http://opengotham.github.com/2013/01/01/twenty-bakers-doz"/>
+   <link href="http://opengotham.github.com/lesson/2013/01/01/twenty-bakers-doz"/>
    <updated>2013-01-01T00:00:00-05:00</updated>
-   <id>http://opengotham.github.com/2013/01/01/twenty-bakers-doz</id>
+   <id>http://opengotham.github.com/lesson/2013/01/01/twenty-bakers-doz</id>
    <content type="html"></content>
  </entry>
  
