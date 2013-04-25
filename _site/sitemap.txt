@@ -8,4 +8,5 @@ http://mjording.github.com/pages.html
 http://mjording.github.com/sitemap.txt
 http://mjording.github.com/tags.html
 
+http://mjording.github.com/market/2013/01/02/new-learning
 http://mjording.github.com/lesson/2013/01/01/twenty-bakers-doz

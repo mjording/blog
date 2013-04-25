@@ -1,16 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  
- <title>Open Gotham</title>
+ <title>Matthew Jording</title>
  <link href="http://mjording.github.com/atom.xml" rel="self"/>
  <link href="http://mjording.github.com"/>
- <updated>2013-04-23T13:06:39-04:00</updated>
+ <updated>2013-04-25T06:13:25-04:00</updated>
  <id>http://mjording.github.com</id>
  <author>
    <name>Matthew Jording</name>
    <email>mjording@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>New Learning</title>
+   <link href="http://mjording.github.com/market/2013/01/02/new-learning"/>
+   <updated>2013-01-02T00:00:00-05:00</updated>
+   <id>http://mjording.github.com/market/2013/01/02/new-learning</id>
+   <content type="html">&lt;p&gt;Testing juan two juan two three&lt;/p&gt;
+&lt;!-- Start of Brightcove Player --&gt;&lt;div style=&#39;display:none&#39;&gt;
+
+&lt;/div&gt;&lt;div class=&#39;player-block&#39;&gt;
+  &lt;!--
+  By use of this code snippet, I agree to the Brightcove Publisher T and C 
+  found at https://accounts.brightcove.com/en/terms-and-conditions/. 
+  --&gt;
+  &lt;script language=&#39;JavaScript&#39; src=&#39;http://admin.brightcove.com/js/BrightcoveExperiences.js&#39; type=&#39;text/javascript&#39;&gt;
+  &lt;/script&gt;
+&lt;object class=&#39;BrightcoveExperience&#39; id=&#39;myExperience2324529428001&#39;&gt;
+  &lt;param name=&#39;bgcolor&#39; value=&#39;#FFFFFF&#39; /&gt;
+  &lt;param name=&#39;width&#39; value=&#39;486&#39; /&gt;
+  &lt;param name=&#39;height&#39; value=&#39;412&#39; /&gt;
+  &lt;param name=&#39;playerID&#39; value=&#39;2325817616001&#39; /&gt;
+  &lt;param name=&#39;playerKey&#39; value=&#39;AQ~~,AAACHKYez-k~,_n6slaY2OpZUaKTVg9meWbzidKssfE7w&#39; /&gt;
+  &lt;param name=&#39;isVid&#39; value=&#39;true&#39; /&gt;
+  &lt;param name=&#39;isUI&#39; value=&#39;true&#39; /&gt;
+  &lt;param name=&#39;dynamicStreaming&#39; value=&#39;true&#39; /&gt;
+  &lt;param name=&#39;includeAPI&#39; value=&#39;true&#39; /&gt;
+  &lt;param name=&#39;templateLoadHandler&#39; value=&#39;BCLS.onTemplateLoad&#39; /&gt;
+  &lt;param name=&#39;templateReadyHandler&#39; value=&#39;BCLS.onTemplateReady&#39; /&gt;
+  &lt;param name=&#39;@videoPlayer&#39; value=&#39;2324529428001&#39; /&gt;
+&lt;/object&gt;
+
+
+
+  &lt;!-- End of Brightcove Player --&gt;
+&lt;/div&gt;&lt;p id=&#39;videoName&#39;&gt;Currently watching: &lt;strong&gt;Bird_Titmouse&lt;/strong&gt;&lt;/p&gt;&lt;p id=&#39;progress&#39;&gt;Video Progress: &lt;span id=&#39;progressBar&#39; /&gt;&lt;/p&gt;</content>
+ </entry>
  
  <entry>
    <title>twenty bakers doz.</title>

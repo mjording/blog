@@ -428,4 +428,8 @@ Small Device Styles
     font-size: 11px;
   }
 
+  #progressBar {
+    background-color: #64AAB2;
+  }
+
 }

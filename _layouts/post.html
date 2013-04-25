@@ -3,3 +3,49 @@ layout: default
 ---
 {% include JB/setup %}
 {% include themes/twitter/post.html %}
+<script>
+var BCLS = (function() {
+  // variable
+  var eProgress = document.getElementById("progress"),
+      player,
+      APIModules,
+      adEvent,
+      captionsEvent,
+      contentEvent,
+      cuePointEvent,
+      mediaEvent,
+      videoPlayer,
+      eProgressBar = document.getElementById("progressBar"),
+      eVideoName = document.getElementById("videoName");
+  return {
+    onTemplateLoad : function (experienceID) {
+      // get a reference to the player and API Modules and Events
+      player = brightcove.api.getExperience(experienceID);
+      APIModules = brightcove.api.modules.APIModules;
+      adEvent = brightcove.api.events.AdEvent;
+      captionsEvent = brightcove.api.events.CaptionsEvent;
+      contentEvent = brightcove.api.events.ContentEvent;
+      cuePointEvent = brightcove.api.events.CuePointEvent;
+      mediaEvent = brightcove.api.events.MediaEvent;
+    },
+    onTemplateReady : function (evt) {
+      // get references to modules
+      videoPlayer = player.getModule(APIModules.VIDEO_PLAYER);
+      // get the video data for the current video
+      videoPlayer.getCurrentVideo( function(videoDTO) {
+        eVideoName.innerHTML = "Currently watching: " + videoDTO.displayName + "";
+      } ); 
+
+      videoPlayer.addEventListener(mediaEvent.PROGRESS, BCLS.onProgress);
+    },
+    onProgress : function (evt) {
+      if ((evt.duration - evt.position) > .1) {
+        eProgressBar.innerHTML += "&nbsp;";
+      } else {
+        videoPlayer.removeEventListener(mediaEvent.PROGRESS, onProgress);
+        eProgress.innerHTML += " Video complete";
+      }
+    }
+  }
+}());
+</script>

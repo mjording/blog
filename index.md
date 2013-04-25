@@ -1,7 +1,7 @@
 ---
 layout: page
 title: ~
-tagline: pushed daily
+tagline: (i=i)
 ---
 {% include JB/setup %}
 
