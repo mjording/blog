@@ -1,0 +1,39 @@
+---
+layout: page
+title: ~
+tagline: (i=i)
+---
+{% include JB/setup %}
+
+  {% for post in paginator.posts %}
+  <article>
+     <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+      <h6 class="date">{{post.date | date_to_string }}<span
+          class="author"> -  Matthew Jording</span></h6>
+    <div class="content">
+      {{ post.content }}
+    </div>
+  </article>
+ {% endfor %}
+  
+ <ul class="pager">
+    {% if paginator.previous_page %}
+    <li>
+       {% if paginator.page == 2 %}
+         <a href="/">&larr; Previous</a> 
+       {% else %}
+        <a href="/page{{paginator.previous_page}}">&larr; Previous</a></li>
+       {% endif %}
+    </li>
+    {% else %}
+    <li class="disabled btn">Previous</li>
+      
+    {% endif %}
+    <span class="page_number">Page: {{paginator.page}} of {{paginator.total_pages}}</span>
+    {% if paginator.next_page %}
+    <li><a href="/page{{paginator.next_page}}">Next &rarr;</a></li>
+    {% else %}
+    <li class="disabled btn">Next &rarr;</li>
+    {% endif %}
+  </ul>
+</div>

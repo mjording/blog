@@ -4,13 +4,61 @@
  <title>Matthew Jording</title>
  <link href="http://mjording.github.com/atom.xml" rel="self"/>
  <link href="http://mjording.github.com"/>
- <updated>2013-04-25T08:05:51-04:00</updated>
+ <updated>2013-04-30T07:26:47-04:00</updated>
  <id>http://mjording.github.com</id>
  <author>
    <name>Matthew Jording</name>
    <email>mjording@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>TC Disrupt NY Hackathon yr 4, postmortem</title>
+   <link href="http://mjording.github.com/2013/04/30/tc-disrupt-ny-hackathon-yr-4-postmortem"/>
+   <updated>2013-04-30T00:00:00-04:00</updated>
+   <id>http://mjording.github.com/2013/04/30/tc-disrupt-ny-hackathon-yr-4-postmortem</id>
+   <content type="html">&lt;p&gt;This weekend the 4th New York TechCrunch Disrupt conference is happening. Every year Disrupt is proceeded by a 24 hour hack-a-thon, and as with every year before I rallied friends &amp;amp; colleagues to go without sleep and produce questionable code in challenging environments.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Rails 4</title>
+   <link href="http://mjording.github.com/2013/04/28/rails-4"/>
+   <updated>2013-04-28T00:00:00-04:00</updated>
+   <id>http://mjording.github.com/2013/04/28/rails-4</id>
+   <content type="html"></content>
+ </entry>
+ 
+ <entry>
+   <title>Emberjs</title>
+   <link href="http://mjording.github.com/2013/04/20/emberjs"/>
+   <updated>2013-04-20T00:00:00-04:00</updated>
+   <id>http://mjording.github.com/2013/04/20/emberjs</id>
+   <content type="html"></content>
+ </entry>
+ 
+ <entry>
+   <title>4hb success</title>
+   <link href="http://mjording.github.com/2013/03/30/4hb-success"/>
+   <updated>2013-03-30T00:00:00-04:00</updated>
+   <id>http://mjording.github.com/2013/03/30/4hb-success</id>
+   <content type="html"></content>
+ </entry>
+ 
+ <entry>
+   <title>Teaching Ruby on Rails</title>
+   <link href="http://mjording.github.com/2013/03/02/teaching-ruby-on-rails"/>
+   <updated>2013-03-02T00:00:00-05:00</updated>
+   <id>http://mjording.github.com/2013/03/02/teaching-ruby-on-rails</id>
+   <content type="html"></content>
+ </entry>
+ 
+ <entry>
+   <title>D3.js</title>
+   <link href="http://mjording.github.com/2013/01/20/d3js"/>
+   <updated>2013-01-20T00:00:00-05:00</updated>
+   <id>http://mjording.github.com/2013/01/20/d3js</id>
+   <content type="html"></content>
+ </entry>
  
  <entry>
    <title>New Learning</title>
@@ -54,6 +102,188 @@
    <updated>2013-01-01T00:00:00-05:00</updated>
    <id>http://mjording.github.com/lesson/2013/01/01/twenty-bakers-doz</id>
    <content type="html"></content>
+ </entry>
+ 
+ <entry>
+   <title>Skillshare course</title>
+   <link href="http://mjording.github.com/2012/12/18/skillshare-course"/>
+   <updated>2012-12-18T00:00:00-05:00</updated>
+   <id>http://mjording.github.com/2012/12/18/skillshare-course</id>
+   <content type="html"></content>
+ </entry>
+ 
+ <entry>
+   <title>The New New York Economy</title>
+   <link href="http://mjording.github.com/2012/10/30/the-new-new-york-economy"/>
+   <updated>2012-10-30T00:00:00-04:00</updated>
+   <id>http://mjording.github.com/2012/10/30/the-new-new-york-economy</id>
+   <content type="html"></content>
+ </entry>
+ 
+ <entry>
+   <title>Backbone.js</title>
+   <link href="http://mjording.github.com/2012/06/02/backbonejs"/>
+   <updated>2012-06-02T00:00:00-04:00</updated>
+   <id>http://mjording.github.com/2012/06/02/backbonejs</id>
+   <content type="html"></content>
+ </entry>
+ 
+ <entry>
+   <title>Failing for the win</title>
+   <link href="http://mjording.github.com/2012/03/03/failing-for-the-win"/>
+   <updated>2012-03-03T00:00:00-05:00</updated>
+   <id>http://mjording.github.com/2012/03/03/failing-for-the-win</id>
+   <content type="html">&lt;p&gt;If Agile methods of application development is what you takeaway from Lean startups, you are doing it wrong.&lt;/p&gt;
+
+&lt;p&gt;The Lean startup teaches agile teams business leaders to focus on creating competitive products/services. This in deference to focusing on on creating a product that will compete in its target market.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Startups</title>
+   <link href="http://mjording.github.com/2011/12/14/Startups"/>
+   <updated>2011-12-14T00:00:00-05:00</updated>
+   <id>http://mjording.github.com/2011/12/14/Startups</id>
+   <content type="html"></content>
+ </entry>
+ 
+ <entry>
+   <title>Ruby is Object Oriented not Message Callable</title>
+   <link href="http://mjording.github.com/2011/02/01/ruby-is-object-oriented-not-message-callable"/>
+   <updated>2011-02-01T00:00:00-05:00</updated>
+   <id>http://mjording.github.com/2011/02/01/ruby-is-object-oriented-not-message-callable</id>
+   <content type="html">&lt;p&gt;Ruby sees Objects &amp;amp; Blocks not messages &amp;amp; receivers&lt;/p&gt;
+
+&lt;p&gt;it may not be the fight of the century but one of the things &lt;a href=&#39;http://fitzgeraldnick.com/weblog/39/&#39;&gt;Fritz’ post&lt;/a&gt; reminded me of was Katz blog post last year&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#39;http://yehudakatz.com/2010/02/21/ruby-is-not-a-callable-oriented-language/&#39;&gt;Ruby is NOT a Callable Oriented Language (It’s Object Oriented)&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Hopefully Fritz will not take this as an indictment or assertion that he is unaware of proc &amp;amp; block behavior under the hood. Still I know I have reached for messaging composed structures as a default with Ruby and been burnt&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>One of Ruby's strongest traits as a language is its community.</title>
+   <link href="http://mjording.github.com/2011/01/30/one-of-rubys-strongest-traits-as-a-language-is-its-community"/>
+   <updated>2011-01-30T00:00:00-05:00</updated>
+   <id>http://mjording.github.com/2011/01/30/one-of-rubys-strongest-traits-as-a-language-is-its-community</id>
+   <content type="html">&lt;p&gt;One of Ruby’s strongest traits as a language is its community.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#39;http://fitzgeraldnick.com&#39;&gt;Nick Fitzgerald&lt;/a&gt;, posted a &lt;a href=&#39;http://fitzgeraldnick.com/weblog/39/&#39;&gt;nice piece&lt;/a&gt; on object oriented code on new years eve 2010. Yes he was blogging about programming on NYE. Whats perhaps more telling is I tweeted and read it as it came out.&lt;/p&gt;
+
+&lt;p&gt;One of the reasons I was happy to see a OO post on Ruby is the rarity. In our &lt;a href=&#39;http://meetup.com/nycruby/&#39;&gt;weekly meetup&lt;/a&gt; we don’t cover it enough. I think this is because seasoned Rubyists assume to have a working knowledge of the Ruby’s Object structure and new Rubyists tend to be facilitated by Ruby’s meta-programming side. Ignoring OO discussion can be a huge problem. As Yahuda Katz ( the man who saved Rails ) pointed out in a few rants as he walked through the shadow of active record that &lt;a href=&#39;http://yehudakatz.com/2010/02/21/ruby-is-not-a-callable-oriented-language/&#39;&gt;Ruby’s strength is in the Object&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Ruby is a wonderfully accommodating language to code in. This helps coders get things done. It also allows the Active Record version 2.3.x codebase to exist. To the credit of AR it was and still is a nearly painless data persistance experience for both newbie and old web beard. The initial key to being approachable and friendly to the libraries consumers was a fairly heavy handed use of meta-programming. I wont go to far into it here but essentially AR attempted to work around a variety of potential issues with a fairly elegant leveraging of method_missing and a labyrinth of mix-ins.&lt;/p&gt;
+
+&lt;p&gt;AR gave us callbacks and gave developers power over the transaction to the chagrin of DBA’s system wide. All this seems great until it needs maintenance, refactoring or an extension via plugin/gem. It is at this point that the Ruby daredevils were separated from the faint of heart. Meta programming on this scale forces a developer to be brilliant to a level superseding function of a ORM or in many cases forces one to create create maps. We should not have to make maps of code.&lt;/p&gt;
+
+&lt;p&gt;I was fortunate to have done nearly all my Ruby work outside of Rails until the past couple of years, thanks to successful consulting practice, a fat Java resume and Merb I escaped what would have driven me to contribute all my family time to making Rails as elegant a codebase as it is for web developers as a web dev Domain Specific Language (DSL). Thank you Yehuda ( @wycats](http://twitter.com/#!/wycats ) ) , Engine Yard et all for allowing me to take on Rails projects and participate more fully in the Ruby community.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#39;http://twitter.com/#!/wycats&#39;&gt;@wycats&lt;/a&gt; has also been one of the few ROR devs to both &lt;a href=&#39;http://yehudakatz.com/2009/03/06/alias_method_chain-in-models/&#39;&gt;despair&lt;/a&gt; when we fool ourselves into thinking we are clever watching him &lt;a href=&#39;http://yehudakatz.com/2009/01/16/status-update-a-fresh-look-at-callbacks/&#39;&gt;tend the gardens&lt;/a&gt; of ruby web frameworks saved me hours and frustration. This is not to mention the tremendous innovative contributions &lt;a href=&#39;http://yehudakatz.com/2010/04/12/some-of-the-problems-bundler-solves/&#39;&gt;directly&lt;/a&gt; gave the community nor the &lt;a href=&#39;http://weblog.rubyonrails.org/2010/2/13/jos-e-valim-and-carl-lerche-joins-rails-core&#39;&gt;indirect&lt;/a&gt; &lt;a href=&#39;https://github.com/josevalim&#39;&gt;contributions&lt;/a&gt; &lt;a href=&#39;http://yehudakatz.com/2010/08/14/threads-in-ruby-enough-already/&#39;&gt;his guidance&lt;/a&gt;, &lt;a href=&#39;http://yehudakatz.com/2010/08/14/threads-in-ruby-enough-already/&#39;&gt;solid public engineering&lt;/a&gt;, and &lt;a href=&#39;http://yehudakatz.com/2009/08/24/my-10-favorite-things-about-the-ruby-language/&#39;&gt;passion&lt;/a&gt; for &lt;a href=&#39;http://yehudakatz.com/2010/02/07/the-building-blocks-of-ruby/&#39;&gt;the craft&lt;/a&gt; that leaves any RoR dev indebted .&lt;/p&gt;
+
+&lt;p&gt;Really what I’m saying is I have a man crush on Yehuda Katz. I am going to right now thank him on twitter and follow his example by attempting to in a minor way find best practices and discuss them publicly. Sure it can be a bit intimidating to work publicly, where others are given the opportunity to ridicule. I know that I stand in the shadow of some amazing talent. One of the things that keeps me happy to be among Rubyists and part of the community is that the ridicule if it comes is good spirited and humorous and more often then not everyone is given an opportunity to participate in a discussion and learn from each other.&lt;/p&gt;
+
+&lt;p&gt;Shortly after my gushing thanks of @wycats I’ll be posting my screencast on Object Composition in Ruby&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Composing Objects with Ruby</title>
+   <link href="http://mjording.github.com/2011/01/22/composing-ruby-objects"/>
+   <updated>2011-01-22T00:00:00-05:00</updated>
+   <id>http://mjording.github.com/2011/01/22/composing-ruby-objects</id>
+   <content type="html">&lt;p&gt;Those who know me from the NYC Ruby meetup, my consulting, or open source efforts know that I hold a candle for the Haskell Programming language. I learned the basics of Haskell around the time I was trying to make sense of some really bizarre javascript. Haskell gave me an epiphany experience in understanding Functional composition. It also came at exactly the right moment, at the beginnings of jquery and javascripts acceptance in software engineering as a grown up language.&lt;/p&gt;
+
+&lt;p&gt;Thanks &lt;a href=&#39;http://www.oreillynet.com/pub/au/3252&#39;&gt;Douglas Crockford&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This is why I’m going to start my blogcasting year off by taking about Object Oriented Ruby and Composition.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>cravin bacon?</title>
+   <link href="http://mjording.github.com/2010/12/19/cravin-bacon"/>
+   <updated>2010-12-19T00:00:00-05:00</updated>
+   <id>http://mjording.github.com/2010/12/19/cravin-bacon</id>
+   <content type="html">&lt;p&gt;&lt;img alt=&#39;cravinit&#39; src=&#39;http://media.tumblr.com/tumblr_ldbrp0S8EG1qbom6x.png&#39; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Last weekend I participated in another &lt;a href=&#39;http://foodhack.wikispaces.com/&#39;&gt;hack fest&lt;/a&gt; this time centered on the venn diagram intersection of Food and Technology. There were some great people there with great ideas that would improve the health and lifestyles of new yorkers. But I just wanted one thing that no food site has been able to deliver to me yet. Decent search results for restaurant food.. not restaurants but the actual menu items. So I sat down with some members of the new york ruby meetup and others interested in just getting this one feature and we cranked out a really simple app that gave the results in a wall of text results.&lt;/p&gt;
+
+&lt;p&gt;This week a few of us spent a couple of hours on making it cleaner and its starting to shape up. Perhaps tonight you will be able to use the alpha.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>fine print</title>
+   <link href="http://mjording.github.com/2010/12/12/fine-print"/>
+   <updated>2010-12-12T00:00:00-05:00</updated>
+   <id>http://mjording.github.com/2010/12/12/fine-print</id>
+   <content type="html">&lt;p&gt;In a previous life before I was invested in the Ruby community, and before my life as a Java Enterprise Consultant I was a Linux and Free Software activist moonlighting as a Unix System Administrator. After seeing the same arguments on IRC channels recycled ad infinitum I may have become as jaded as Statler or Waldorf, but I still believe.&lt;/p&gt;
+
+&lt;p&gt;Ruby makes me giddy after a stint as the Senior Portal Developer for Conde Nast. Ruby has a culture and community that embrases self sufficiency in a way that cannot fathom a corporate sysadmin unable to install a local internal Tomcat server within a two week framework.&lt;/p&gt;
+
+&lt;p&gt;But yes it does have the trappings and handicaps of an isolated subculture. My experience prior to 2007 was outside of the rails word, and I have to admit to my being as disturbed as a pythonist to my rejection of whitespace rules when I first looked at ruby server and system offerings. Things are way better on that front but we do seem to have a blind spot to the legal side of software.&lt;/p&gt;
+
+&lt;p&gt;Generally I do care about licensing. There Linux and GNU tools that were added to the GNU toolset in 1988 and having reliable mature native C or lisp code is a godsend. This is a sharp contrast to the web application market. Even the government and banking applications I have done in Java have around a 5 year lifecycle.&lt;/p&gt;
+
+&lt;p&gt;Ruby’s embrace of Rapid application development methodologies, never mind its core tool and framework incredibly short cycles make a decision to completely refactor a Ruby Application&lt;/p&gt;
+
+&lt;p&gt;Not to worry I’ll not reject bathing and shaving completely, but I’ll pay my &lt;a href=&#39;http://www.fsf.org/&#39;&gt;FSF&lt;/a&gt; and &lt;a href=&#39;https://www.eff.org/&#39;&gt;EFF&lt;/a&gt; dues. I’ll make more effort to use free code within a lean pragmatic work cycle.&lt;/p&gt;
+
+&lt;p&gt;Unfortunately there are plenty of times that there is more money then time&lt;/p&gt;
+
+&lt;p&gt;So I’m annoyed that the community still fails to produce products that are GPLd that have anything but a suggested market value. So because of that one of my new years resolutions is to produce at least one non-gratis free product.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>rails 3 generators hand rolled edition</title>
+   <link href="http://mjording.github.com/2010/08/17/rails-3-generators-hand-rolled-edition"/>
+   <updated>2010-08-17T00:00:00-04:00</updated>
+   <id>http://mjording.github.com/2010/08/17/rails-3-generators-hand-rolled-edition</id>
+   <content type="html"></content>
+ </entry>
+ 
+ <entry>
+   <title>secrets of the software conference pros</title>
+   <link href="http://mjording.github.com/2010/08/12/secrets-of-the-software-conference-pros"/>
+   <updated>2010-08-12T00:00:00-04:00</updated>
+   <id>http://mjording.github.com/2010/08/12/secrets-of-the-software-conference-pros</id>
+   <content type="html">&lt;p&gt;Have you ever been at a development conference and been struck by the developers command of the command line. Not to say that they are all snake oil and high equity mortgage salesman but most of them use a bit of linnix illusion.&lt;/p&gt;
+
+&lt;p&gt;The trick to pulling this of is to record your bash session with something like the script or ttyrec commands. If your on debian or ubuntu you likely still have scriptreplay available to you.&lt;/p&gt;
+
+&lt;p&gt;record your session&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;script -t 2&amp;gt; tutorial.timing -a tutorial.session&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;execute what you you want to show off exit the session replay&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;scriptreplay tutorial.timing tutorial.session&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;if your not on debian you need to build ttyrec&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;git clone git@github.com:mjording/ttyrec.git
+cd ttyrec
+make&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If you don&amp;#8217;t have the directory setup (from macports or another unix add on)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo /bin/mkdir -p /usr/local/bin
+sudo /usr/sbin/chown root:wheel /usr/local /usr/local/bin
+sudo /bin/chmod 0755 /usr/local /usr/local/bin &lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Otherwise copy the binary in and make some shortcuts&lt;/p&gt;
+
+&lt;p&gt;copy ttyrec, ttyplay and ttytime to /usr/local/bin&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo /bin/cp -i ~/Desktop/ttyrec-1.0.8/ttyrec /usr/local/bin
+sudo /bin/cp -i ~/Desktop/ttyrec-1.0.8/ttyplay /usr/local/bin
+sudo /bin/cp -i ~/Desktop/ttyrec-1.0.8/ttytime /usr/local/bin&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now you can record your session to a file via&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ttyrec -a tutorial.session&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;and play it back with&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ttyplay tutorial.session&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;ttyrec also has advanced features that allow you to adjust playback speed.&lt;/p&gt;</content>
  </entry>
  
  
