@@ -27,8 +27,8 @@ author :
 # Else if you are pushing to username.github.com, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-# CNAME mattjording.com
-production_url : http://mjording.github.com
+# CNAME iequalsi.com
+production_url : http://iequalsi.com
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
@@ -39,18 +39,18 @@ JB :
   # Links in your website should always be prefixed with {{BASE_PATH}}
   # however this value will be dynamically changed depending on your deployment situation.
   #
-  # CNAME (http://mattjording.com)
+  # CNAME (http://iequalsi.com)
   #   DO NOT SET BASE_PATH 
   #   (urls will be prefixed with "/" and work relatively)
   #
-  # GitHub Pages (http://mjording.github.com)
+  # GitHub Pages (http://iequalsi.com)
   #   DO NOT SET BASE_PATH 
   #   (urls will be prefixed with "/" and work relatively)
   #
-  # GitHub Project Pages (http://mjording.github.com/project-name)
+  # GitHub Project Pages (http://iequalsi.com/project-name)
   #
   #   A GitHub Project site exists in the `gh-pages` branch of one of your repositories.
-  #  REQUIRED! Set BASE_PATH to: http://mjording.github.com/project-name
+  #  REQUIRED! Set BASE_PATH to: http://iequalsi.com/project-name
   #
   # CAUTION:
   #   - When in Localhost, your site will run from root "/" regardless of BASE_PATH

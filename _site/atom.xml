@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
  
  <title>Matthew Jording</title>
- <link href="http://mjording.github.com/atom.xml" rel="self"/>
- <link href="http://mjording.github.com"/>
- <updated>2013-04-30T07:26:47-04:00</updated>
- <id>http://mjording.github.com</id>
+ <link href="http://iequalsi.com/atom.xml" rel="self"/>
+ <link href="http://iequalsi.com"/>
+ <updated>2013-04-30T10:57:30-04:00</updated>
+ <id>http://iequalsi.com</id>
  <author>
    <name>Matthew Jording</name>
    <email>mjording@gmail.com</email>
@@ -14,57 +14,117 @@
  
  <entry>
    <title>TC Disrupt NY Hackathon yr 4, postmortem</title>
-   <link href="http://mjording.github.com/2013/04/30/tc-disrupt-ny-hackathon-yr-4-postmortem"/>
+   <link href="http://iequalsi.com/2013/04/30/tc-disrupt-ny-hackathon-yr-4-postmortem"/>
    <updated>2013-04-30T00:00:00-04:00</updated>
-   <id>http://mjording.github.com/2013/04/30/tc-disrupt-ny-hackathon-yr-4-postmortem</id>
-   <content type="html">&lt;p&gt;This weekend the 4th New York TechCrunch Disrupt conference is happening. Every year Disrupt is proceeded by a 24 hour hack-a-thon, and as with every year before I rallied friends &amp;amp; colleagues to go without sleep and produce questionable code in challenging environments.&lt;/p&gt;</content>
+   <id>http://iequalsi.com/2013/04/30/tc-disrupt-ny-hackathon-yr-4-postmortem</id>
+   <content type="html">&lt;p&gt;This weekend the 4th New York TechCrunch Disrupt conference is happening. Every year Disrupt is proceeded by a 24 hour hack-a-thon, and as with every year before I rallied friends &amp;amp; colleagues to go without sleep and produce questionable code in challenging environments.&lt;/p&gt;
+
+&lt;p&gt;The hack-a-thon is startup bootstraping accelerated. Finding collaborators, discovering market, communicating vision, and where I generally land, engineering a solution.&lt;/p&gt;
+
+&lt;p&gt;The full reveal is going to come in a couple of posts after a full assessment of technical debt.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#39;no spoon&#39; src=&#39;http://24.media.tumblr.com/597605d214d6d5fefefe716f14029daa/tumblr_mfskcukdkt1qbzefuo1_r4_400.jpg&#39; /&gt;&lt;/p&gt;</content>
  </entry>
  
  <entry>
    <title>Rails 4</title>
-   <link href="http://mjording.github.com/2013/04/28/rails-4"/>
+   <link href="http://iequalsi.com/2013/04/28/rails-4"/>
    <updated>2013-04-28T00:00:00-04:00</updated>
-   <id>http://mjording.github.com/2013/04/28/rails-4</id>
-   <content type="html"></content>
+   <id>http://iequalsi.com/2013/04/28/rails-4</id>
+   <content type="html">&lt;p&gt;Rails 4, is on deck. Is your application ready for it?&lt;/p&gt;
+
+&lt;h2 id=&#39;big_changes_afoot_good_ones_for_the_most_part&#39;&gt;Big changes afoot. Good ones for the most part.&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Rails 4 requires Ruby &amp;gt;= 1.9.3&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The biggest change will be the deprecation of Ruby 1.8.x support. You will have to set your environment to 1.9.3 or above.&lt;/p&gt;
+
+&lt;p&gt;This means not only ensuring your hosting enviornment (heroku, engineyard, etc) are up to date, but also that your development environment matches.&lt;/p&gt;
+
+&lt;p&gt;In terminal check the version of your installed ruby ruby &amp;#8211;version You should see ruby-1.9.3-p392 Or if your living on the edge&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ruby 2.0.0p0&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;h3 id=&#39;rails_4_is_threadsafe_by_default&#39;&gt;Rails 4 is Threadsafe by default.&lt;/h3&gt;
+
+&lt;p&gt;Rails threadsafe! before 4 was an option but now its default.&lt;/p&gt;
+
+&lt;p&gt;Threadsafe Rails&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Preloads the application setting preload_frameworks, cache_classes, and dependency_loading to true&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Stop locking allow_concurrency is set to true. This will turn of the rack middleware Rack::Lock. Which will run requests asynchronously.&lt;/p&gt;
+
+&lt;p&gt;Unicorn is a concurrent server. Concurrency accepts multiple requests at a time, distributing the request through workers. In fact in some modified configurations of unicorn benchmarks show &lt;a href=&#39;http://rubysnippets.com/2013/04/10/rails-4-live-streaming-versus-node-dot-js/&#39;&gt;better performance&lt;/a&gt; then the argued winner of the concurrency arguement nodejs.&lt;/p&gt;
+
+&lt;p&gt;Writing threadsafe code is not as hard as the Java developer drenched in sweat makes it out to be.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div&gt;
+  &lt;pre&gt;&lt;code class=&#39;ruby&#39;&gt;require &amp;#39;thread&amp;#39;
+semaphore = Mutex.new
+
+a = Thread.new {
+    semaphore.synchronize {
+        # access shared resource
+    }
+}
+
+b = Thread.new {
+    semaphore.synchronize {
+        # access shared resource
+    }
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;</content>
  </entry>
  
  <entry>
    <title>Emberjs</title>
-   <link href="http://mjording.github.com/2013/04/20/emberjs"/>
+   <link href="http://iequalsi.com/2013/04/20/emberjs"/>
    <updated>2013-04-20T00:00:00-04:00</updated>
-   <id>http://mjording.github.com/2013/04/20/emberjs</id>
+   <id>http://iequalsi.com/2013/04/20/emberjs</id>
    <content type="html"></content>
  </entry>
  
  <entry>
    <title>4hb success</title>
-   <link href="http://mjording.github.com/2013/03/30/4hb-success"/>
+   <link href="http://iequalsi.com/2013/03/30/4hb-success"/>
    <updated>2013-03-30T00:00:00-04:00</updated>
-   <id>http://mjording.github.com/2013/03/30/4hb-success</id>
+   <id>http://iequalsi.com/2013/03/30/4hb-success</id>
    <content type="html"></content>
  </entry>
  
  <entry>
    <title>Teaching Ruby on Rails</title>
-   <link href="http://mjording.github.com/2013/03/02/teaching-ruby-on-rails"/>
+   <link href="http://iequalsi.com/2013/03/02/teaching-ruby-on-rails"/>
    <updated>2013-03-02T00:00:00-05:00</updated>
-   <id>http://mjording.github.com/2013/03/02/teaching-ruby-on-rails</id>
+   <id>http://iequalsi.com/2013/03/02/teaching-ruby-on-rails</id>
    <content type="html"></content>
  </entry>
  
  <entry>
    <title>D3.js</title>
-   <link href="http://mjording.github.com/2013/01/20/d3js"/>
+   <link href="http://iequalsi.com/2013/01/20/d3js"/>
    <updated>2013-01-20T00:00:00-05:00</updated>
-   <id>http://mjording.github.com/2013/01/20/d3js</id>
+   <id>http://iequalsi.com/2013/01/20/d3js</id>
    <content type="html"></content>
  </entry>
  
  <entry>
    <title>New Learning</title>
-   <link href="http://mjording.github.com/market/2013/01/02/new-learning"/>
+   <link href="http://iequalsi.com/market/2013/01/02/new-learning"/>
    <updated>2013-01-02T00:00:00-05:00</updated>
-   <id>http://mjording.github.com/market/2013/01/02/new-learning</id>
+   <id>http://iequalsi.com/market/2013/01/02/new-learning</id>
    <content type="html">&lt;p&gt;Testing juan two juan two three&lt;/p&gt;
 &lt;!-- Start of Brightcove Player --&gt;&lt;div style=&#39;display:none&#39;&gt;
 
@@ -98,41 +158,41 @@
  
  <entry>
    <title>twenty bakers doz.</title>
-   <link href="http://mjording.github.com/lesson/2013/01/01/twenty-bakers-doz"/>
+   <link href="http://iequalsi.com/lesson/2013/01/01/twenty-bakers-doz"/>
    <updated>2013-01-01T00:00:00-05:00</updated>
-   <id>http://mjording.github.com/lesson/2013/01/01/twenty-bakers-doz</id>
+   <id>http://iequalsi.com/lesson/2013/01/01/twenty-bakers-doz</id>
    <content type="html"></content>
  </entry>
  
  <entry>
    <title>Skillshare course</title>
-   <link href="http://mjording.github.com/2012/12/18/skillshare-course"/>
+   <link href="http://iequalsi.com/2012/12/18/skillshare-course"/>
    <updated>2012-12-18T00:00:00-05:00</updated>
-   <id>http://mjording.github.com/2012/12/18/skillshare-course</id>
+   <id>http://iequalsi.com/2012/12/18/skillshare-course</id>
    <content type="html"></content>
  </entry>
  
  <entry>
    <title>The New New York Economy</title>
-   <link href="http://mjording.github.com/2012/10/30/the-new-new-york-economy"/>
+   <link href="http://iequalsi.com/2012/10/30/the-new-new-york-economy"/>
    <updated>2012-10-30T00:00:00-04:00</updated>
-   <id>http://mjording.github.com/2012/10/30/the-new-new-york-economy</id>
+   <id>http://iequalsi.com/2012/10/30/the-new-new-york-economy</id>
    <content type="html"></content>
  </entry>
  
  <entry>
    <title>Backbone.js</title>
-   <link href="http://mjording.github.com/2012/06/02/backbonejs"/>
+   <link href="http://iequalsi.com/2012/06/02/backbonejs"/>
    <updated>2012-06-02T00:00:00-04:00</updated>
-   <id>http://mjording.github.com/2012/06/02/backbonejs</id>
+   <id>http://iequalsi.com/2012/06/02/backbonejs</id>
    <content type="html"></content>
  </entry>
  
  <entry>
    <title>Failing for the win</title>
-   <link href="http://mjording.github.com/2012/03/03/failing-for-the-win"/>
+   <link href="http://iequalsi.com/2012/03/03/failing-for-the-win"/>
    <updated>2012-03-03T00:00:00-05:00</updated>
-   <id>http://mjording.github.com/2012/03/03/failing-for-the-win</id>
+   <id>http://iequalsi.com/2012/03/03/failing-for-the-win</id>
    <content type="html">&lt;p&gt;If Agile methods of application development is what you takeaway from Lean startups, you are doing it wrong.&lt;/p&gt;
 
 &lt;p&gt;The Lean startup teaches agile teams business leaders to focus on creating competitive products/services. This in deference to focusing on on creating a product that will compete in its target market.&lt;/p&gt;</content>
@@ -140,17 +200,17 @@
  
  <entry>
    <title>Startups</title>
-   <link href="http://mjording.github.com/2011/12/14/Startups"/>
+   <link href="http://iequalsi.com/2011/12/14/Startups"/>
    <updated>2011-12-14T00:00:00-05:00</updated>
-   <id>http://mjording.github.com/2011/12/14/Startups</id>
+   <id>http://iequalsi.com/2011/12/14/Startups</id>
    <content type="html"></content>
  </entry>
  
  <entry>
    <title>Ruby is Object Oriented not Message Callable</title>
-   <link href="http://mjording.github.com/2011/02/01/ruby-is-object-oriented-not-message-callable"/>
+   <link href="http://iequalsi.com/2011/02/01/ruby-is-object-oriented-not-message-callable"/>
    <updated>2011-02-01T00:00:00-05:00</updated>
-   <id>http://mjording.github.com/2011/02/01/ruby-is-object-oriented-not-message-callable</id>
+   <id>http://iequalsi.com/2011/02/01/ruby-is-object-oriented-not-message-callable</id>
    <content type="html">&lt;p&gt;Ruby sees Objects &amp;amp; Blocks not messages &amp;amp; receivers&lt;/p&gt;
 
 &lt;p&gt;it may not be the fight of the century but one of the things &lt;a href=&#39;http://fitzgeraldnick.com/weblog/39/&#39;&gt;Fritz’ post&lt;/a&gt; reminded me of was Katz blog post last year&lt;/p&gt;
@@ -162,9 +222,9 @@
  
  <entry>
    <title>One of Ruby's strongest traits as a language is its community.</title>
-   <link href="http://mjording.github.com/2011/01/30/one-of-rubys-strongest-traits-as-a-language-is-its-community"/>
+   <link href="http://iequalsi.com/2011/01/30/one-of-rubys-strongest-traits-as-a-language-is-its-community"/>
    <updated>2011-01-30T00:00:00-05:00</updated>
-   <id>http://mjording.github.com/2011/01/30/one-of-rubys-strongest-traits-as-a-language-is-its-community</id>
+   <id>http://iequalsi.com/2011/01/30/one-of-rubys-strongest-traits-as-a-language-is-its-community</id>
    <content type="html">&lt;p&gt;One of Ruby’s strongest traits as a language is its community.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#39;http://fitzgeraldnick.com&#39;&gt;Nick Fitzgerald&lt;/a&gt;, posted a &lt;a href=&#39;http://fitzgeraldnick.com/weblog/39/&#39;&gt;nice piece&lt;/a&gt; on object oriented code on new years eve 2010. Yes he was blogging about programming on NYE. Whats perhaps more telling is I tweeted and read it as it came out.&lt;/p&gt;
@@ -186,9 +246,9 @@
  
  <entry>
    <title>Composing Objects with Ruby</title>
-   <link href="http://mjording.github.com/2011/01/22/composing-ruby-objects"/>
+   <link href="http://iequalsi.com/2011/01/22/composing-ruby-objects"/>
    <updated>2011-01-22T00:00:00-05:00</updated>
-   <id>http://mjording.github.com/2011/01/22/composing-ruby-objects</id>
+   <id>http://iequalsi.com/2011/01/22/composing-ruby-objects</id>
    <content type="html">&lt;p&gt;Those who know me from the NYC Ruby meetup, my consulting, or open source efforts know that I hold a candle for the Haskell Programming language. I learned the basics of Haskell around the time I was trying to make sense of some really bizarre javascript. Haskell gave me an epiphany experience in understanding Functional composition. It also came at exactly the right moment, at the beginnings of jquery and javascripts acceptance in software engineering as a grown up language.&lt;/p&gt;
 
 &lt;p&gt;Thanks &lt;a href=&#39;http://www.oreillynet.com/pub/au/3252&#39;&gt;Douglas Crockford&lt;/a&gt;.&lt;/p&gt;
@@ -198,9 +258,9 @@
  
  <entry>
    <title>cravin bacon?</title>
-   <link href="http://mjording.github.com/2010/12/19/cravin-bacon"/>
+   <link href="http://iequalsi.com/2010/12/19/cravin-bacon"/>
    <updated>2010-12-19T00:00:00-05:00</updated>
-   <id>http://mjording.github.com/2010/12/19/cravin-bacon</id>
+   <id>http://iequalsi.com/2010/12/19/cravin-bacon</id>
    <content type="html">&lt;p&gt;&lt;img alt=&#39;cravinit&#39; src=&#39;http://media.tumblr.com/tumblr_ldbrp0S8EG1qbom6x.png&#39; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Last weekend I participated in another &lt;a href=&#39;http://foodhack.wikispaces.com/&#39;&gt;hack fest&lt;/a&gt; this time centered on the venn diagram intersection of Food and Technology. There were some great people there with great ideas that would improve the health and lifestyles of new yorkers. But I just wanted one thing that no food site has been able to deliver to me yet. Decent search results for restaurant food.. not restaurants but the actual menu items. So I sat down with some members of the new york ruby meetup and others interested in just getting this one feature and we cranked out a really simple app that gave the results in a wall of text results.&lt;/p&gt;
@@ -210,9 +270,9 @@
  
  <entry>
    <title>fine print</title>
-   <link href="http://mjording.github.com/2010/12/12/fine-print"/>
+   <link href="http://iequalsi.com/2010/12/12/fine-print"/>
    <updated>2010-12-12T00:00:00-05:00</updated>
-   <id>http://mjording.github.com/2010/12/12/fine-print</id>
+   <id>http://iequalsi.com/2010/12/12/fine-print</id>
    <content type="html">&lt;p&gt;In a previous life before I was invested in the Ruby community, and before my life as a Java Enterprise Consultant I was a Linux and Free Software activist moonlighting as a Unix System Administrator. After seeing the same arguments on IRC channels recycled ad infinitum I may have become as jaded as Statler or Waldorf, but I still believe.&lt;/p&gt;
 
 &lt;p&gt;Ruby makes me giddy after a stint as the Senior Portal Developer for Conde Nast. Ruby has a culture and community that embrases self sufficiency in a way that cannot fathom a corporate sysadmin unable to install a local internal Tomcat server within a two week framework.&lt;/p&gt;
@@ -232,17 +292,17 @@
  
  <entry>
    <title>rails 3 generators hand rolled edition</title>
-   <link href="http://mjording.github.com/2010/08/17/rails-3-generators-hand-rolled-edition"/>
+   <link href="http://iequalsi.com/2010/08/17/rails-3-generators-hand-rolled-edition"/>
    <updated>2010-08-17T00:00:00-04:00</updated>
-   <id>http://mjording.github.com/2010/08/17/rails-3-generators-hand-rolled-edition</id>
+   <id>http://iequalsi.com/2010/08/17/rails-3-generators-hand-rolled-edition</id>
    <content type="html"></content>
  </entry>
  
  <entry>
    <title>secrets of the software conference pros</title>
-   <link href="http://mjording.github.com/2010/08/12/secrets-of-the-software-conference-pros"/>
+   <link href="http://iequalsi.com/2010/08/12/secrets-of-the-software-conference-pros"/>
    <updated>2010-08-12T00:00:00-04:00</updated>
-   <id>http://mjording.github.com/2010/08/12/secrets-of-the-software-conference-pros</id>
+   <id>http://iequalsi.com/2010/08/12/secrets-of-the-software-conference-pros</id>
    <content type="html">&lt;p&gt;Have you ever been at a development conference and been struck by the developers command of the command line. Not to say that they are all snake oil and high equity mortgage salesman but most of them use a bit of linnix illusion.&lt;/p&gt;
 
 &lt;p&gt;The trick to pulling this of is to record your bash session with something like the script or ttyrec commands. If your on debian or ubuntu you likely still have scriptreplay available to you.&lt;/p&gt;

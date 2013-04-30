@@ -104,7 +104,61 @@
 
 <div class="row">
   <div class="span8">
-    
+    <p>Rails 4, is on deck. Is your application ready for it?</p>
+
+<h2 id='big_changes_afoot_good_ones_for_the_most_part'>Big changes afoot. Good ones for the most part.</h2>
+
+<ul>
+<li>Rails 4 requires Ruby &gt;= 1.9.3</li>
+</ul>
+
+<p>The biggest change will be the deprecation of Ruby 1.8.x support. You will have to set your environment to 1.9.3 or above.</p>
+
+<p>This means not only ensuring your hosting enviornment (heroku, engineyard, etc) are up to date, but also that your development environment matches.</p>
+
+<p>In terminal check the version of your installed ruby ruby &#8211;version You should see ruby-1.9.3-p392 Or if your living on the edge</p>
+
+<pre><code>ruby 2.0.0p0</code></pre>
+<hr />
+<ul>
+<li>
+<h3 id='rails_4_is_threadsafe_by_default'>Rails 4 is Threadsafe by default.</h3>
+
+<p>Rails threadsafe! before 4 was an option but now its default.</p>
+
+<p>Threadsafe Rails</p>
+
+<ul>
+<li>
+<p>Preloads the application setting preload_frameworks, cache_classes, and dependency_loading to true</p>
+</li>
+
+<li>
+<p>Stop locking allow_concurrency is set to true. This will turn of the rack middleware Rack::Lock. Which will run requests asynchronously.</p>
+
+<p>Unicorn is a concurrent server. Concurrency accepts multiple requests at a time, distributing the request through workers. In fact in some modified configurations of unicorn benchmarks show <a href='http://rubysnippets.com/2013/04/10/rails-4-live-streaming-versus-node-dot-js/'>better performance</a> then the argued winner of the concurrency arguement nodejs.</p>
+
+<p>Writing threadsafe code is not as hard as the Java developer drenched in sweat makes it out to be.</p>
+</li>
+</ul>
+</li>
+</ul>
+<div>
+  <pre><code class='ruby'>require &#39;thread&#39;
+semaphore = Mutex.new
+
+a = Thread.new {
+    semaphore.synchronize {
+        # access shared resource
+    }
+}
+
+b = Thread.new {
+    semaphore.synchronize {
+        # access shared resource
+    }
+}</code></pre>
+</div>
     <hr>
     <div class="pagination">
       <ul>
