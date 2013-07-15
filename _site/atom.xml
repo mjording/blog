@@ -4,7 +4,7 @@
  <title>Matthew Jording</title>
  <link href="http://mjording.github.com/atom.xml" rel="self"/>
  <link href="http://mjording.github.com"/>
- <updated>2013-04-30T07:26:47-04:00</updated>
+ <updated>2013-07-14T01:20:21-04:00</updated>
  <id>http://mjording.github.com</id>
  <author>
    <name>Matthew Jording</name>
@@ -17,7 +17,13 @@
    <link href="http://mjording.github.com/2013/04/30/tc-disrupt-ny-hackathon-yr-4-postmortem"/>
    <updated>2013-04-30T00:00:00-04:00</updated>
    <id>http://mjording.github.com/2013/04/30/tc-disrupt-ny-hackathon-yr-4-postmortem</id>
-   <content type="html">&lt;p&gt;This weekend the 4th New York TechCrunch Disrupt conference is happening. Every year Disrupt is proceeded by a 24 hour hack-a-thon, and as with every year before I rallied friends &amp;amp; colleagues to go without sleep and produce questionable code in challenging environments.&lt;/p&gt;</content>
+   <content type="html">&lt;p&gt;This weekend the 4th New York TechCrunch Disrupt conference is happening. Every year Disrupt is proceeded by a 24 hour hack-a-thon, and as with every year before I rallied friends &amp;amp; colleagues to go without sleep and produce questionable code in challenging environments.&lt;/p&gt;
+
+&lt;p&gt;The hack-a-thon is startup bootstraping accelerated. Finding collaborators, discovering market, communicating vision, and where I generally land, engineering a solution.&lt;/p&gt;
+
+&lt;p&gt;The full reveal is going to come in a couple of posts after a full assessment of technical debt.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#39;no spoon&#39; src=&#39;http://24.media.tumblr.com/597605d214d6d5fefefe716f14029daa/tumblr_mfskcukdkt1qbzefuo1_r4_400.jpg&#39; /&gt;&lt;/p&gt;</content>
  </entry>
  
  <entry>
@@ -25,7 +31,60 @@
    <link href="http://mjording.github.com/2013/04/28/rails-4"/>
    <updated>2013-04-28T00:00:00-04:00</updated>
    <id>http://mjording.github.com/2013/04/28/rails-4</id>
-   <content type="html"></content>
+   <content type="html">&lt;p&gt;Rails 4, is on deck. Is your application ready for it?&lt;/p&gt;
+
+&lt;h2 id=&#39;big_changes_afoot_good_ones_for_the_most_part&#39;&gt;Big changes afoot. Good ones for the most part.&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Rails 4 requires Ruby &amp;gt;= 1.9.3&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The biggest change will be the deprecation of Ruby 1.8.x support. You will have to set your environment to 1.9.3 or above.&lt;/p&gt;
+
+&lt;p&gt;This means not only ensuring your hosting enviornment (heroku, engineyard, etc) are up to date, but also that your development environment matches.&lt;/p&gt;
+
+&lt;p&gt;In terminal check the version of your installed ruby ruby &amp;#8211;version You should see ruby-1.9.3-p392 Or if your living on the edge&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ruby 2.0.0p0&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;h3 id=&#39;rails_4_is_threadsafe_by_default&#39;&gt;Rails 4 is Threadsafe by default.&lt;/h3&gt;
+
+&lt;p&gt;Rails threadsafe! before 4 was an option but now its default.&lt;/p&gt;
+
+&lt;p&gt;Threadsafe Rails&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Preloads the application setting preload_frameworks, cache_classes, and dependency_loading to true&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Stop locking allow_concurrency is set to true. This will turn of the rack middleware Rack::Lock. Which will run requests asynchronously.&lt;/p&gt;
+
+&lt;p&gt;Unicorn is a concurrent server. Concurrency accepts multiple requests at a time, distributing the request through workers. In fact in some modified configurations of unicorn benchmarks show &lt;a href=&#39;http://rubysnippets.com/2013/04/10/rails-4-live-streaming-versus-node-dot-js/&#39;&gt;better performance&lt;/a&gt; then the argued winner of the concurrency arguement nodejs.&lt;/p&gt;
+
+&lt;p&gt;Writing threadsafe code is not as hard as the Java developer drenched in sweat makes it out to be.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;ruby&#39;&gt;&lt;span class=&#39;nb&#39;&gt;require&lt;/span&gt; &lt;span class=&#39;s1&#39;&gt;&amp;#39;thread&amp;#39;&lt;/span&gt;
+&lt;span class=&#39;n&#39;&gt;semaphore&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;no&#39;&gt;Mutex&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;new&lt;/span&gt;
+
+&lt;span class=&#39;n&#39;&gt;a&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;no&#39;&gt;Thread&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;new&lt;/span&gt; &lt;span class=&#39;p&#39;&gt;{&lt;/span&gt;
+    &lt;span class=&#39;n&#39;&gt;semaphore&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;synchronize&lt;/span&gt; &lt;span class=&#39;p&#39;&gt;{&lt;/span&gt;
+        &lt;span class=&#39;c1&#39;&gt;# access shared resource&lt;/span&gt;
+    &lt;span class=&#39;p&#39;&gt;}&lt;/span&gt;
+&lt;span class=&#39;p&#39;&gt;}&lt;/span&gt;
+
+&lt;span class=&#39;n&#39;&gt;b&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;no&#39;&gt;Thread&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;new&lt;/span&gt; &lt;span class=&#39;p&#39;&gt;{&lt;/span&gt;
+    &lt;span class=&#39;n&#39;&gt;semaphore&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;synchronize&lt;/span&gt; &lt;span class=&#39;p&#39;&gt;{&lt;/span&gt;
+        &lt;span class=&#39;c1&#39;&gt;# access shared resource&lt;/span&gt;
+    &lt;span class=&#39;p&#39;&gt;}&lt;/span&gt;
+&lt;span class=&#39;p&#39;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content>
  </entry>
  
  <entry>
@@ -65,35 +124,7 @@
    <link href="http://mjording.github.com/market/2013/01/02/new-learning"/>
    <updated>2013-01-02T00:00:00-05:00</updated>
    <id>http://mjording.github.com/market/2013/01/02/new-learning</id>
-   <content type="html">&lt;p&gt;Testing juan two juan two three&lt;/p&gt;
-&lt;!-- Start of Brightcove Player --&gt;&lt;div style=&#39;display:none&#39;&gt;
-
-&lt;/div&gt;&lt;div class=&#39;player-block&#39;&gt;
-  &lt;!--
-  By use of this code snippet, I agree to the Brightcove Publisher T and C 
-  found at https://accounts.brightcove.com/en/terms-and-conditions/. 
-  --&gt;
-  &lt;script language=&#39;JavaScript&#39; src=&#39;http://admin.brightcove.com/js/BrightcoveExperiences.js&#39; type=&#39;text/javascript&#39;&gt;
-  &lt;/script&gt;
-&lt;object class=&#39;BrightcoveExperience&#39; id=&#39;myExperience2324529428001&#39;&gt;
-  &lt;param name=&#39;bgcolor&#39; value=&#39;#FFFFFF&#39; /&gt;
-  &lt;param name=&#39;width&#39; value=&#39;486&#39; /&gt;
-  &lt;param name=&#39;height&#39; value=&#39;412&#39; /&gt;
-  &lt;param name=&#39;playerID&#39; value=&#39;2325817616001&#39; /&gt;
-  &lt;param name=&#39;playerKey&#39; value=&#39;AQ~~,AAACHKYez-k~,_n6slaY2OpZUaKTVg9meWbzidKssfE7w&#39; /&gt;
-  &lt;param name=&#39;isVid&#39; value=&#39;true&#39; /&gt;
-  &lt;param name=&#39;isUI&#39; value=&#39;true&#39; /&gt;
-  &lt;param name=&#39;dynamicStreaming&#39; value=&#39;true&#39; /&gt;
-  &lt;param name=&#39;includeAPI&#39; value=&#39;true&#39; /&gt;
-  &lt;param name=&#39;templateLoadHandler&#39; value=&#39;BCLS.onTemplateLoad&#39; /&gt;
-  &lt;param name=&#39;templateReadyHandler&#39; value=&#39;BCLS.onTemplateReady&#39; /&gt;
-  &lt;param name=&#39;@videoPlayer&#39; value=&#39;2324529428001&#39; /&gt;
-&lt;/object&gt;
-
-
-
-  &lt;!-- End of Brightcove Player --&gt;
-&lt;/div&gt;&lt;p id=&#39;videoName&#39;&gt;Currently watching: &lt;strong&gt;Bird_Titmouse&lt;/strong&gt;&lt;/p&gt;&lt;p id=&#39;progress&#39;&gt;Video Progress: &lt;span id=&#39;progressBar&#39; /&gt;&lt;/p&gt;</content>
+   <content type="html"></content>
  </entry>
  
  <entry>
