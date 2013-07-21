@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    
+    <meta name="author" content="Matthew Jording">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="/assets/themes/twitter/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+      <link rel="shortcut icon" href="/images/favicon.ico">
+    <!-- Le fav and touch icons -->
+    <!-- Update these with your own images
+      <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    -->
+    <script language="JavaScript" type="text/javascript" src="/javascripts/main.js"></script>
+  </head>
+
+  <body>
+
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="/">Matthew Jording</a>
+          <ul class="nav">
+            
+            
+            
+
+
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/categories.html">Categories</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/pages.html">Pages</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/tags.html">Tags</a></li>
+      	
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="content">
+        
+
+<div class="row">
+  <div class="span12">
+    
+
+  
+  <article>
+     <h3><a href="/2010/12/12/fine-print">fine print</a></h3>
+      <h6 class="date">12 Dec 2010<span
+          class="author"> -  Matthew Jording</span></h6>
+    <div class="content">
+      <p>In a previous life before I was invested in the Ruby community, and before my life as a Java Enterprise Consultant I was a Linux and Free Software activist moonlighting as a Unix System Administrator. After seeing the same arguments on IRC channels recycled ad infinitum I may have become as jaded as Statler or Waldorf, but I still believe.</p>
+
+<p>Ruby makes me giddy after a stint as the Senior Portal Developer for Conde Nast. Ruby has a culture and community that embrases self sufficiency in a way that cannot fathom a corporate sysadmin unable to install a local internal Tomcat server within a two week framework.</p>
+
+<p>But yes it does have the trappings and handicaps of an isolated subculture. My experience prior to 2007 was outside of the rails word, and I have to admit to my being as disturbed as a pythonist to my rejection of whitespace rules when I first looked at ruby server and system offerings. Things are way better on that front but we do seem to have a blind spot to the legal side of software.</p>
+
+<p>Generally I do care about licensing. There Linux and GNU tools that were added to the GNU toolset in 1988 and having reliable mature native C or lisp code is a godsend. This is a sharp contrast to the web application market. Even the government and banking applications I have done in Java have around a 5 year lifecycle.</p>
+
+<p>Ruby’s embrace of Rapid application development methodologies, never mind its core tool and framework incredibly short cycles make a decision to completely refactor a Ruby Application</p>
+
+<p>Not to worry I’ll not reject bathing and shaving completely, but I’ll pay my <a href='http://www.fsf.org/'>FSF</a> and <a href='https://www.eff.org/'>EFF</a> dues. I’ll make more effort to use free code within a lean pragmatic work cycle.</p>
+
+<p>Unfortunately there are plenty of times that there is more money then time</p>
+
+<p>So I’m annoyed that the community still fails to produce products that are GPLd that have anything but a suggested market value. So because of that one of my new years resolutions is to produce at least one non-gratis free product.</p>
+    </div>
+  </article>
+ 
+  <article>
+     <h3><a href="/2010/11/01/nanowrimo-again">nanowrimo again</a></h3>
+      <h6 class="date">01 Nov 2010<span
+          class="author"> -  Matthew Jording</span></h6>
+    <div class="content">
+      
+    </div>
+  </article>
+ 
+  <article>
+     <h3><a href="/2010/08/17/rails-3-generators-hand-rolled-edition">rails 3 generators hand rolled edition</a></h3>
+      <h6 class="date">17 Aug 2010<span
+          class="author"> -  Matthew Jording</span></h6>
+    <div class="content">
+      
+    </div>
+  </article>
+ 
+  <article>
+     <h3><a href="/2010/08/12/secrets-of-the-software-conference-pros">secrets of the software conference pros</a></h3>
+      <h6 class="date">12 Aug 2010<span
+          class="author"> -  Matthew Jording</span></h6>
+    <div class="content">
+      <p>Have you ever been at a development conference and been struck by the developers command of the command line. Not to say that they are all snake oil and high equity mortgage salesman but most of them use a bit of linnix illusion.</p>
+
+<p>The trick to pulling this of is to record your bash session with something like the script or ttyrec commands. If your on debian or ubuntu you likely still have scriptreplay available to you.</p>
+
+<p>record your session</p>
+
+<pre><code>script -t 2&gt; tutorial.timing -a tutorial.session</code></pre>
+
+<p>execute what you you want to show off exit the session replay</p>
+
+<pre><code>scriptreplay tutorial.timing tutorial.session</code></pre>
+
+<p>if your not on debian you need to build ttyrec</p>
+
+<pre><code>git clone git@github.com:mjording/ttyrec.git
+cd ttyrec
+make</code></pre>
+
+<p>If you don&#8217;t have the directory setup (from macports or another unix add on)</p>
+
+<pre><code>sudo /bin/mkdir -p /usr/local/bin
+sudo /usr/sbin/chown root:wheel /usr/local /usr/local/bin
+sudo /bin/chmod 0755 /usr/local /usr/local/bin </code></pre>
+
+<p>Otherwise copy the binary in and make some shortcuts</p>
+
+<p>copy ttyrec, ttyplay and ttytime to /usr/local/bin</p>
+
+<pre><code>sudo /bin/cp -i ~/Desktop/ttyrec-1.0.8/ttyrec /usr/local/bin
+sudo /bin/cp -i ~/Desktop/ttyrec-1.0.8/ttyplay /usr/local/bin
+sudo /bin/cp -i ~/Desktop/ttyrec-1.0.8/ttytime /usr/local/bin</code></pre>
+
+<p>Now you can record your session to a file via</p>
+
+<pre><code>ttyrec -a tutorial.session</code></pre>
+
+<p>and play it back with</p>
+
+<pre><code>ttyplay tutorial.session</code></pre>
+
+<p>ttyrec also has advanced features that allow you to adjust playback speed.</p>
+    </div>
+  </article>
+ 
+  
+ <ul class="pager">
+    
+    <li>
+       
+        <a href="/page7">&larr; Previous</a></li>
+       
+    </li>
+    
+    <span class="page_number">Page: 8 of 8</span>
+    
+    <li class="disabled btn">Next &rarr;</li>
+    
+  </ul>
+</div>
+
+  </div>
+</div>
+
+
+      </div>
+
+      <footer>
+        <p>&copy; Matthew Jording 2013 
+          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+        </p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    
+  </body>
+</html>
+

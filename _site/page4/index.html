@@ -86,6 +86,14 @@
   
     
   
+    
+  
+    
+  
+    
+  
+    
+  
 
 
 
@@ -98,9 +106,6 @@
 
       <div class="content">
         
-<div class="page-header">
-  <h1>  <small>(i=i)</small></h1>
-</div>
 
 <div class="row">
   <div class="span12">
@@ -108,57 +113,8 @@
 
   
   <article>
-     <h1><a href="/2011/01/22/composing-ruby-objects">Composing Objects with Ruby</a></h1>
-      <h6 class="date">22 Jan 2011<span
-          class="author"> -  Matthew Jording</span></h6>
-    <div class="content">
-      <p>Those who know me from the NYC Ruby meetup, my consulting, or open source efforts know that I hold a candle for the Haskell Programming language. I learned the basics of Haskell around the time I was trying to make sense of some really bizarre javascript. Haskell gave me an epiphany experience in understanding Functional composition. It also came at exactly the right moment, at the beginnings of jquery and javascripts acceptance in software engineering as a grown up language.</p>
-
-<p>Thanks <a href='http://www.oreillynet.com/pub/au/3252'>Douglas Crockford</a>.</p>
-
-<p>This is why I’m going to start my blogcasting year off by taking about Object Oriented Ruby and Composition.</p>
-    </div>
-  </article>
- 
-  <article>
-     <h1><a href="/2010/12/19/cravin-bacon">cravin bacon?</a></h1>
-      <h6 class="date">19 Dec 2010<span
-          class="author"> -  Matthew Jording</span></h6>
-    <div class="content">
-      <p><img alt='cravinit' src='http://media.tumblr.com/tumblr_ldbrp0S8EG1qbom6x.png' /></p>
-
-<p>Last weekend I participated in another <a href='http://foodhack.wikispaces.com/'>hack fest</a> this time centered on the venn diagram intersection of Food and Technology. There were some great people there with great ideas that would improve the health and lifestyles of new yorkers. But I just wanted one thing that no food site has been able to deliver to me yet. Decent search results for restaurant food.. not restaurants but the actual menu items. So I sat down with some members of the new york ruby meetup and others interested in just getting this one feature and we cranked out a really simple app that gave the results in a wall of text results.</p>
-
-<p>This week a few of us spent a couple of hours on making it cleaner and its starting to shape up. Perhaps tonight you will be able to use the alpha.</p>
-    </div>
-  </article>
- 
-  <article>
-     <h1><a href="/2010/12/12/fine-print">fine print</a></h1>
-      <h6 class="date">12 Dec 2010<span
-          class="author"> -  Matthew Jording</span></h6>
-    <div class="content">
-      <p>In a previous life before I was invested in the Ruby community, and before my life as a Java Enterprise Consultant I was a Linux and Free Software activist moonlighting as a Unix System Administrator. After seeing the same arguments on IRC channels recycled ad infinitum I may have become as jaded as Statler or Waldorf, but I still believe.</p>
-
-<p>Ruby makes me giddy after a stint as the Senior Portal Developer for Conde Nast. Ruby has a culture and community that embrases self sufficiency in a way that cannot fathom a corporate sysadmin unable to install a local internal Tomcat server within a two week framework.</p>
-
-<p>But yes it does have the trappings and handicaps of an isolated subculture. My experience prior to 2007 was outside of the rails word, and I have to admit to my being as disturbed as a pythonist to my rejection of whitespace rules when I first looked at ruby server and system offerings. Things are way better on that front but we do seem to have a blind spot to the legal side of software.</p>
-
-<p>Generally I do care about licensing. There Linux and GNU tools that were added to the GNU toolset in 1988 and having reliable mature native C or lisp code is a godsend. This is a sharp contrast to the web application market. Even the government and banking applications I have done in Java have around a 5 year lifecycle.</p>
-
-<p>Ruby’s embrace of Rapid application development methodologies, never mind its core tool and framework incredibly short cycles make a decision to completely refactor a Ruby Application</p>
-
-<p>Not to worry I’ll not reject bathing and shaving completely, but I’ll pay my <a href='http://www.fsf.org/'>FSF</a> and <a href='https://www.eff.org/'>EFF</a> dues. I’ll make more effort to use free code within a lean pragmatic work cycle.</p>
-
-<p>Unfortunately there are plenty of times that there is more money then time</p>
-
-<p>So I’m annoyed that the community still fails to produce products that are GPLd that have anything but a suggested market value. So because of that one of my new years resolutions is to produce at least one non-gratis free product.</p>
-    </div>
-  </article>
- 
-  <article>
-     <h1><a href="/2010/08/17/rails-3-generators-hand-rolled-edition">rails 3 generators hand rolled edition</a></h1>
-      <h6 class="date">17 Aug 2010<span
+     <h3><a href="/2013/01/20/d3js">D3.js</a></h3>
+      <h6 class="date">20 Jan 2013<span
           class="author"> -  Matthew Jording</span></h6>
     <div class="content">
       
@@ -166,51 +122,38 @@
   </article>
  
   <article>
-     <h1><a href="/2010/08/12/secrets-of-the-software-conference-pros">secrets of the software conference pros</a></h1>
-      <h6 class="date">12 Aug 2010<span
+     <h3><a href="/2013/01/14/assesment">assesment</a></h3>
+      <h6 class="date">14 Jan 2013<span
           class="author"> -  Matthew Jording</span></h6>
     <div class="content">
-      <p>Have you ever been at a development conference and been struck by the developers command of the command line. Not to say that they are all snake oil and high equity mortgage salesman but most of them use a bit of linnix illusion.</p>
-
-<p>The trick to pulling this of is to record your bash session with something like the script or ttyrec commands. If your on debian or ubuntu you likely still have scriptreplay available to you.</p>
-
-<p>record your session</p>
-
-<pre><code>script -t 2&gt; tutorial.timing -a tutorial.session</code></pre>
-
-<p>execute what you you want to show off exit the session replay</p>
-
-<pre><code>scriptreplay tutorial.timing tutorial.session</code></pre>
-
-<p>if your not on debian you need to build ttyrec</p>
-
-<pre><code>git clone git@github.com:mjording/ttyrec.git
-cd ttyrec
-make</code></pre>
-
-<p>If you don&#8217;t have the directory setup (from macports or another unix add on)</p>
-
-<pre><code>sudo /bin/mkdir -p /usr/local/bin
-sudo /usr/sbin/chown root:wheel /usr/local /usr/local/bin
-sudo /bin/chmod 0755 /usr/local /usr/local/bin </code></pre>
-
-<p>Otherwise copy the binary in and make some shortcuts</p>
-
-<p>copy ttyrec, ttyplay and ttytime to /usr/local/bin</p>
-
-<pre><code>sudo /bin/cp -i ~/Desktop/ttyrec-1.0.8/ttyrec /usr/local/bin
-sudo /bin/cp -i ~/Desktop/ttyrec-1.0.8/ttyplay /usr/local/bin
-sudo /bin/cp -i ~/Desktop/ttyrec-1.0.8/ttytime /usr/local/bin</code></pre>
-
-<p>Now you can record your session to a file via</p>
-
-<pre><code>ttyrec -a tutorial.session</code></pre>
-
-<p>and play it back with</p>
-
-<pre><code>ttyplay tutorial.session</code></pre>
-
-<p>ttyrec also has advanced features that allow you to adjust playback speed.</p>
+      
+    </div>
+  </article>
+ 
+  <article>
+     <h3><a href="/2013/01/09/promises-and-polyfills">promises and polyfills</a></h3>
+      <h6 class="date">09 Jan 2013<span
+          class="author"> -  Matthew Jording</span></h6>
+    <div class="content">
+      
+    </div>
+  </article>
+ 
+  <article>
+     <h3><a href="/2013/01/05/promises-promises">promises promises</a></h3>
+      <h6 class="date">05 Jan 2013<span
+          class="author"> -  Matthew Jording</span></h6>
+    <div class="content">
+      
+    </div>
+  </article>
+ 
+  <article>
+     <h3><a href="/market/2013/01/02/new-learning">New Learning</a></h3>
+      <h6 class="date">02 Jan 2013<span
+          class="author"> -  Matthew Jording</span></h6>
+    <div class="content">
+      
     </div>
   </article>
  
@@ -223,9 +166,9 @@ sudo /bin/cp -i ~/Desktop/ttyrec-1.0.8/ttytime /usr/local/bin</code></pre>
        
     </li>
     
-    <span class="page_number">Page: 4 of 4</span>
+    <span class="page_number">Page: 4 of 8</span>
     
-    <li class="disabled btn">Next &rarr;</li>
+    <li><a href="/page5">Next &rarr;</a></li>
     
   </ul>
 </div>
