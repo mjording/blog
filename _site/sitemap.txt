@@ -16,6 +16,7 @@ http://mjording.github.com/page7/index.html
 http://mjording.github.com/page8/index.html
 
 http://mjording.github.com/2013/07/21/makerpath
+http://mjording.github.com/2013/07/20/node-version-manager
 http://mjording.github.com/2013/07/19/requirejs--grunt
 http://mjording.github.com/2013/07/08/rails-ember-strategies
 http://mjording.github.com/2013/07/07/bubbles

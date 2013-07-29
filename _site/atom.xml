@@ -4,7 +4,7 @@
  <title>Matthew Jording</title>
  <link href="http://mjording.github.com/atom.xml" rel="self"/>
  <link href="http://mjording.github.com"/>
- <updated>2013-07-21T18:42:47-04:00</updated>
+ <updated>2013-07-29T16:24:30-04:00</updated>
  <id>http://mjording.github.com</id>
  <author>
    <name>Matthew Jording</name>
@@ -17,6 +17,28 @@
    <link href="http://mjording.github.com/2013/07/21/makerpath"/>
    <updated>2013-07-21T00:00:00-04:00</updated>
    <id>http://mjording.github.com/2013/07/21/makerpath</id>
+   <content type="html">&lt;p&gt;MakerPath, the hack I had started at the NYC TechCrunch Disrupt Hackfest this year, is rising from the ashes with another iteration and potentially a first release. I&amp;#8217;ll be posting updates on what it&amp;#8217;s like to revive a hack with spit, polish, and a dash of best practices.&lt;/p&gt;
+
+&lt;h3 id=&#39;intent&#39;&gt;Intent:&lt;/h3&gt;
+
+&lt;h4 id=&#39;personalized_suggestions_of_best_path_to_a_learning_goal&#39;&gt;Personalized suggestions of best path to a learning goal.&lt;/h4&gt;
+
+&lt;h5 id=&#39;challenges_toward_goal&#39;&gt;Challenges toward goal:&lt;/h5&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Catalog of learning resources.&lt;/li&gt;
+
+&lt;li&gt;Personalized recommendation given minimal user information.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The initial hack applied &lt;a href=&#39;https://github.com/tildeio/oasis.js&#39;&gt;the oasis javascript library&lt;/a&gt; similarly to &lt;a href=&#39;https://github.com/tildeio/conductor.js&#39;&gt;the conductor demonstration&lt;/a&gt;.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Node Version Manager</title>
+   <link href="http://mjording.github.com/2013/07/20/node-version-manager"/>
+   <updated>2013-07-20T00:00:00-04:00</updated>
+   <id>http://mjording.github.com/2013/07/20/node-version-manager</id>
    <content type="html"></content>
  </entry>
  
