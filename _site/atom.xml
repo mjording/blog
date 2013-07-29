@@ -4,7 +4,7 @@
  <title>Matthew Jording</title>
  <link href="http://iequalsi.com/atom.xml" rel="self"/>
  <link href="http://iequalsi.com"/>
- <updated>2013-07-29T17:17:52-04:00</updated>
+ <updated>2013-07-29T18:06:50-04:00</updated>
  <id>http://iequalsi.com</id>
  <author>
    <name>Matthew Jording</name>
@@ -37,7 +37,15 @@
    <link href="http://iequalsi.com/2013/07/20/node-version-manager"/>
    <updated>2013-07-20T00:00:00-04:00</updated>
    <id>http://iequalsi.com/2013/07/20/node-version-manager</id>
-   <content type="html"></content>
+   <content type="html">&lt;p&gt;As I have been spending a bit more time with node.js the need has come to work with different versions of node.&lt;/p&gt;
+
+&lt;p&gt;Version management should be a familiar concept to most ruby/rails developers, especially those of us who have been developing on os x. If your a osx ruby developer chances are your using &lt;a href=&#39;https://rvm.io&#39;&gt;Ruby Version Manager (RVM)&lt;/a&gt; or &lt;a href=&#39;https://github.com/sstephenson/rbenv&#39;&gt;rbenv&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Enter the &lt;a href=&#39;https://github.com/creationix/nvm&#39;&gt;Node Version Manager (NVM)&lt;/a&gt;. After calling the curl install script you&amp;#8217;ll be able to quickly change versions of Node to try out new features like &lt;a href=&#39;http://blog.alexmaccaw.com/how-yield-will-transform-node&#39;&gt;yield&lt;/a&gt;. Simply call&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;nvm install 0.11.2&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;and voila your npm and node commands are now mapped to the current development release.&lt;/p&gt;</content>
  </entry>
  
  <entry>
