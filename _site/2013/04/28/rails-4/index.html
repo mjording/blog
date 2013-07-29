@@ -86,6 +86,14 @@
   
     
   
+    
+  
+    
+  
+    
+  
+    
+  
 
 
 
@@ -99,14 +107,12 @@
       <div class="content">
         
 <div class="page-header">
-  <h1>Rails 4 <small>(i=i)</small></h1>
+  <h3>Rails 4 <small>(i=i)</small></h3>
 </div>
 
 <div class="row">
   <div class="span8">
-    <p>Rails 4, is on deck. Is your application ready for it?</p>
-
-<h2 id='big_changes_afoot_good_ones_for_the_most_part'>Big changes afoot. Good ones for the most part.</h2>
+    <p>Rails 4, is on deck. Is your application ready for it? Big changes afoot. Good ones for the most part.</p>
 
 <ul>
 <li>Rails 4 requires Ruby &gt;= 1.9.3</li>
@@ -116,50 +122,48 @@
 
 <p>This means not only ensuring your hosting enviornment (heroku, engineyard, etc) are up to date, but also that your development environment matches.</p>
 
-<p>In terminal check the version of your installed ruby ruby &#8211;version You should see ruby-1.9.3-p392 Or if your living on the edge</p>
+<p>In terminal check the version of your installed ruby</p>
+
+<pre><code>ruby --version</code></pre>
+
+<p>You should see</p>
+
+<pre><code>ruby-1.9.3-p392</code></pre>
+
+<p>Or if your living on the edge</p>
 
 <pre><code>ruby 2.0.0p0</code></pre>
-<hr />
-<ul>
-<li>
+
 <h3 id='rails_4_is_threadsafe_by_default'>Rails 4 is Threadsafe by default.</h3>
 
-<p>Rails threadsafe! before 4 was an option but now its default.</p>
+<pre><code>Rails threadsafe! before 4 was an option but now its default. 
 
-<p>Threadsafe Rails</p>
+Threadsafe Rails </code></pre>
 
-<ul>
-<li>
-<p>Preloads the application setting preload_frameworks, cache_classes, and dependency_loading to true</p>
-</li>
+<p>* Preloads the application setting preload_frameworks, cache_classes, and dependency_loading to true * Stop locking allow_concurrency is set to true. This will turn of the rack middleware Rack::Lock. Which will run requests asynchronously.</p>
 
-<li>
-<p>Stop locking allow_concurrency is set to true. This will turn of the rack middleware Rack::Lock. Which will run requests asynchronously.</p>
+<pre><code>Unicorn is a concurrent server. Concurrency accepts multiple requests at</code></pre>
 
-<p>Unicorn is a concurrent server. Concurrency accepts multiple requests at a time, distributing the request through workers. In fact in some modified configurations of unicorn benchmarks show <a href='http://rubysnippets.com/2013/04/10/rails-4-live-streaming-versus-node-dot-js/'>better performance</a> then the argued winner of the concurrency arguement nodejs.</p>
+<p>a time, distributing the request through workers. In fact in some modified configurations of unicorn benchmarks show <a href='http://rubysnippets.com/2013/04/10/rails-4-live-streaming-versus-node-dot-js/'>better performance</a> then the argued winner of the concurrency arguement nodejs.</p>
 
-<p>Writing threadsafe code is not as hard as the Java developer drenched in sweat makes it out to be.</p>
-</li>
-</ul>
-</li>
-</ul>
-<div>
-  <pre><code class='ruby'>require &#39;thread&#39;
-semaphore = Mutex.new
+<pre><code>Writing threadsafe code is not as hard as the Java developer</code></pre>
 
-a = Thread.new {
-    semaphore.synchronize {
-        # access shared resource
-    }
-}
+<p>drenched in sweat makes it out to be.</p>
+<div class='highlight'><pre><code class='ruby'><span class='nb'>require</span> <span class='s1'>&#39;thread&#39;</span>
+<span class='n'>semaphore</span> <span class='o'>=</span> <span class='no'>Mutex</span><span class='o'>.</span><span class='n'>new</span>
 
-b = Thread.new {
-    semaphore.synchronize {
-        # access shared resource
-    }
-}</code></pre>
-</div>
-    <hr>
+<span class='n'>a</span> <span class='o'>=</span> <span class='no'>Thread</span><span class='o'>.</span><span class='n'>new</span> <span class='p'>{</span>
+    <span class='n'>semaphore</span><span class='o'>.</span><span class='n'>synchronize</span> <span class='p'>{</span>
+        <span class='c1'># access shared resource</span>
+    <span class='p'>}</span>
+<span class='p'>}</span>
+
+<span class='n'>b</span> <span class='o'>=</span> <span class='no'>Thread</span><span class='o'>.</span><span class='n'>new</span> <span class='p'>{</span>
+    <span class='n'>semaphore</span><span class='o'>.</span><span class='n'>synchronize</span> <span class='p'>{</span>
+        <span class='c1'># access shared resource</span>
+    <span class='p'>}</span>
+<span class='p'>}</span>
+</code></pre></div>
     <div class="pagination">
       <ul>
       
@@ -173,13 +177,13 @@ b = Thread.new {
       
       </ul>
     </div>
-    <hr>
     
   </div>
   
   <div class="span4">
-    <h4>Published</h4>
-    <div class="date"><span>28 April 2013</span></div>
+    <div class="date">
+      <small>Published  </small><span>28 April 2013</span>
+    </div>
 
     
   </div>

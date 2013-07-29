@@ -17,5 +17,3 @@ The full reveal is going to come in a couple of posts after a full assessment of
 
 
 
-![no spoon](http://24.media.tumblr.com/597605d214d6d5fefefe716f14029daa/tumblr_mfskcukdkt1qbzefuo1_r4_400.jpg "spoon")
-

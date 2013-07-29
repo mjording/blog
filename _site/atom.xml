@@ -4,13 +4,83 @@
  <title>Matthew Jording</title>
  <link href="http://iequalsi.com/atom.xml" rel="self"/>
  <link href="http://iequalsi.com"/>
- <updated>2013-04-30T10:57:30-04:00</updated>
+ <updated>2013-07-29T16:49:04-04:00</updated>
  <id>http://iequalsi.com</id>
  <author>
    <name>Matthew Jording</name>
    <email>mjording@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>makerpath</title>
+   <link href="http://iequalsi.com/2013/07/21/makerpath"/>
+   <updated>2013-07-21T00:00:00-04:00</updated>
+   <id>http://iequalsi.com/2013/07/21/makerpath</id>
+   <content type="html">&lt;p&gt;MakerPath, the hack I had started at the NYC TechCrunch Disrupt Hackfest this year, is rising from the ashes with another iteration and potentially a first release. I&amp;#8217;ll be posting updates on what it&amp;#8217;s like to revive a hack with spit, polish, and a dash of best practices.&lt;/p&gt;
+
+&lt;h3 id=&#39;intent&#39;&gt;Intent:&lt;/h3&gt;
+
+&lt;h4 id=&#39;personalized_suggestions_of_best_path_to_a_learning_goal&#39;&gt;Personalized suggestions of best path to a learning goal.&lt;/h4&gt;
+
+&lt;h5 id=&#39;challenges_toward_goal&#39;&gt;Challenges toward goal:&lt;/h5&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Catalog of learning resources.&lt;/li&gt;
+
+&lt;li&gt;Personalized recommendation given minimal user information.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The initial hack applied &lt;a href=&#39;https://github.com/tildeio/oasis.js&#39;&gt;the oasis javascript library&lt;/a&gt; similarly to &lt;a href=&#39;https://github.com/tildeio/conductor.js&#39;&gt;the conductor demonstration&lt;/a&gt;.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Node Version Manager</title>
+   <link href="http://iequalsi.com/2013/07/20/node-version-manager"/>
+   <updated>2013-07-20T00:00:00-04:00</updated>
+   <id>http://iequalsi.com/2013/07/20/node-version-manager</id>
+   <content type="html"></content>
+ </entry>
+ 
+ <entry>
+   <title>requirejs & grunt</title>
+   <link href="http://iequalsi.com/2013/07/19/requirejs--grunt"/>
+   <updated>2013-07-19T00:00:00-04:00</updated>
+   <id>http://iequalsi.com/2013/07/19/requirejs--grunt</id>
+   <content type="html"></content>
+ </entry>
+ 
+ <entry>
+   <title>rails ember strategies</title>
+   <link href="http://iequalsi.com/2013/07/08/rails-ember-strategies"/>
+   <updated>2013-07-08T00:00:00-04:00</updated>
+   <id>http://iequalsi.com/2013/07/08/rails-ember-strategies</id>
+   <content type="html"></content>
+ </entry>
+ 
+ <entry>
+   <title>bubbles</title>
+   <link href="http://iequalsi.com/2013/07/07/bubbles"/>
+   <updated>2013-07-07T00:00:00-04:00</updated>
+   <id>http://iequalsi.com/2013/07/07/bubbles</id>
+   <content type="html"></content>
+ </entry>
+ 
+ <entry>
+   <title>bricktronics board</title>
+   <link href="http://iequalsi.com/2013/07/05/bricktronics-board"/>
+   <updated>2013-07-05T00:00:00-04:00</updated>
+   <id>http://iequalsi.com/2013/07/05/bricktronics-board</id>
+   <content type="html"></content>
+ </entry>
+ 
+ <entry>
+   <title>education vs content</title>
+   <link href="http://iequalsi.com/2013/07/04/education-vs-content"/>
+   <updated>2013-07-04T00:00:00-04:00</updated>
+   <id>http://iequalsi.com/2013/07/04/education-vs-content</id>
+   <content type="html"></content>
+ </entry>
  
  <entry>
    <title>TC Disrupt NY Hackathon yr 4, postmortem</title>
@@ -21,9 +91,7 @@
 
 &lt;p&gt;The hack-a-thon is startup bootstraping accelerated. Finding collaborators, discovering market, communicating vision, and where I generally land, engineering a solution.&lt;/p&gt;
 
-&lt;p&gt;The full reveal is going to come in a couple of posts after a full assessment of technical debt.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&#39;no spoon&#39; src=&#39;http://24.media.tumblr.com/597605d214d6d5fefefe716f14029daa/tumblr_mfskcukdkt1qbzefuo1_r4_400.jpg&#39; /&gt;&lt;/p&gt;</content>
+&lt;p&gt;The full reveal is going to come in a couple of posts after a full assessment of technical debt.&lt;/p&gt;</content>
  </entry>
  
  <entry>
@@ -31,9 +99,7 @@
    <link href="http://iequalsi.com/2013/04/28/rails-4"/>
    <updated>2013-04-28T00:00:00-04:00</updated>
    <id>http://iequalsi.com/2013/04/28/rails-4</id>
-   <content type="html">&lt;p&gt;Rails 4, is on deck. Is your application ready for it?&lt;/p&gt;
-
-&lt;h2 id=&#39;big_changes_afoot_good_ones_for_the_most_part&#39;&gt;Big changes afoot. Good ones for the most part.&lt;/h2&gt;
+   <content type="html">&lt;p&gt;Rails 4, is on deck. Is your application ready for it? Big changes afoot. Good ones for the most part.&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Rails 4 requires Ruby &amp;gt;= 1.9.3&lt;/li&gt;
@@ -43,49 +109,48 @@
 
 &lt;p&gt;This means not only ensuring your hosting enviornment (heroku, engineyard, etc) are up to date, but also that your development environment matches.&lt;/p&gt;
 
-&lt;p&gt;In terminal check the version of your installed ruby ruby &amp;#8211;version You should see ruby-1.9.3-p392 Or if your living on the edge&lt;/p&gt;
+&lt;p&gt;In terminal check the version of your installed ruby&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ruby --version&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You should see&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ruby-1.9.3-p392&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Or if your living on the edge&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;ruby 2.0.0p0&lt;/code&gt;&lt;/pre&gt;
-&lt;hr /&gt;
-&lt;ul&gt;
-&lt;li&gt;
+
 &lt;h3 id=&#39;rails_4_is_threadsafe_by_default&#39;&gt;Rails 4 is Threadsafe by default.&lt;/h3&gt;
 
-&lt;p&gt;Rails threadsafe! before 4 was an option but now its default.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Rails threadsafe! before 4 was an option but now its default. 
 
-&lt;p&gt;Threadsafe Rails&lt;/p&gt;
+Threadsafe Rails &lt;/code&gt;&lt;/pre&gt;
 
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Preloads the application setting preload_frameworks, cache_classes, and dependency_loading to true&lt;/p&gt;
-&lt;/li&gt;
+&lt;p&gt;* Preloads the application setting preload_frameworks, cache_classes, and dependency_loading to true * Stop locking allow_concurrency is set to true. This will turn of the rack middleware Rack::Lock. Which will run requests asynchronously.&lt;/p&gt;
 
-&lt;li&gt;
-&lt;p&gt;Stop locking allow_concurrency is set to true. This will turn of the rack middleware Rack::Lock. Which will run requests asynchronously.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Unicorn is a concurrent server. Concurrency accepts multiple requests at&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Unicorn is a concurrent server. Concurrency accepts multiple requests at a time, distributing the request through workers. In fact in some modified configurations of unicorn benchmarks show &lt;a href=&#39;http://rubysnippets.com/2013/04/10/rails-4-live-streaming-versus-node-dot-js/&#39;&gt;better performance&lt;/a&gt; then the argued winner of the concurrency arguement nodejs.&lt;/p&gt;
+&lt;p&gt;a time, distributing the request through workers. In fact in some modified configurations of unicorn benchmarks show &lt;a href=&#39;http://rubysnippets.com/2013/04/10/rails-4-live-streaming-versus-node-dot-js/&#39;&gt;better performance&lt;/a&gt; then the argued winner of the concurrency arguement nodejs.&lt;/p&gt;
 
-&lt;p&gt;Writing threadsafe code is not as hard as the Java developer drenched in sweat makes it out to be.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div&gt;
-  &lt;pre&gt;&lt;code class=&#39;ruby&#39;&gt;require &amp;#39;thread&amp;#39;
-semaphore = Mutex.new
+&lt;pre&gt;&lt;code&gt;Writing threadsafe code is not as hard as the Java developer&lt;/code&gt;&lt;/pre&gt;
 
-a = Thread.new {
-    semaphore.synchronize {
-        # access shared resource
-    }
-}
+&lt;p&gt;drenched in sweat makes it out to be.&lt;/p&gt;
+&lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;ruby&#39;&gt;&lt;span class=&#39;nb&#39;&gt;require&lt;/span&gt; &lt;span class=&#39;s1&#39;&gt;&amp;#39;thread&amp;#39;&lt;/span&gt;
+&lt;span class=&#39;n&#39;&gt;semaphore&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;no&#39;&gt;Mutex&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;new&lt;/span&gt;
 
-b = Thread.new {
-    semaphore.synchronize {
-        # access shared resource
-    }
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;</content>
+&lt;span class=&#39;n&#39;&gt;a&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;no&#39;&gt;Thread&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;new&lt;/span&gt; &lt;span class=&#39;p&#39;&gt;{&lt;/span&gt;
+    &lt;span class=&#39;n&#39;&gt;semaphore&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;synchronize&lt;/span&gt; &lt;span class=&#39;p&#39;&gt;{&lt;/span&gt;
+        &lt;span class=&#39;c1&#39;&gt;# access shared resource&lt;/span&gt;
+    &lt;span class=&#39;p&#39;&gt;}&lt;/span&gt;
+&lt;span class=&#39;p&#39;&gt;}&lt;/span&gt;
+
+&lt;span class=&#39;n&#39;&gt;b&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;no&#39;&gt;Thread&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;new&lt;/span&gt; &lt;span class=&#39;p&#39;&gt;{&lt;/span&gt;
+    &lt;span class=&#39;n&#39;&gt;semaphore&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;synchronize&lt;/span&gt; &lt;span class=&#39;p&#39;&gt;{&lt;/span&gt;
+        &lt;span class=&#39;c1&#39;&gt;# access shared resource&lt;/span&gt;
+    &lt;span class=&#39;p&#39;&gt;}&lt;/span&gt;
+&lt;span class=&#39;p&#39;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content>
  </entry>
  
  <entry>
@@ -93,6 +158,38 @@ b = Thread.new {
    <link href="http://iequalsi.com/2013/04/20/emberjs"/>
    <updated>2013-04-20T00:00:00-04:00</updated>
    <id>http://iequalsi.com/2013/04/20/emberjs</id>
+   <content type="html"></content>
+ </entry>
+ 
+ <entry>
+   <title>bad moon</title>
+   <link href="http://iequalsi.com/2013/04/17/bad-moon"/>
+   <updated>2013-04-17T00:00:00-04:00</updated>
+   <id>http://iequalsi.com/2013/04/17/bad-moon</id>
+   <content type="html"></content>
+ </entry>
+ 
+ <entry>
+   <title>Tin Cannery</title>
+   <link href="http://iequalsi.com/2013/04/15/tin-cannery"/>
+   <updated>2013-04-15T00:00:00-04:00</updated>
+   <id>http://iequalsi.com/2013/04/15/tin-cannery</id>
+   <content type="html"></content>
+ </entry>
+ 
+ <entry>
+   <title>new learning</title>
+   <link href="http://iequalsi.com/2013/04/15/new-learning"/>
+   <updated>2013-04-15T00:00:00-04:00</updated>
+   <id>http://iequalsi.com/2013/04/15/new-learning</id>
+   <content type="html"></content>
+ </entry>
+ 
+ <entry>
+   <title>Tin Cannery</title>
+   <link href="http://iequalsi.com/2013/04/12/tin-cannery"/>
+   <updated>2013-04-12T00:00:00-04:00</updated>
+   <id>http://iequalsi.com/2013/04/12/tin-cannery</id>
    <content type="html"></content>
  </entry>
  
@@ -121,39 +218,35 @@ b = Thread.new {
  </entry>
  
  <entry>
+   <title>assesment</title>
+   <link href="http://iequalsi.com/2013/01/14/assesment"/>
+   <updated>2013-01-14T00:00:00-05:00</updated>
+   <id>http://iequalsi.com/2013/01/14/assesment</id>
+   <content type="html"></content>
+ </entry>
+ 
+ <entry>
+   <title>promises and polyfills</title>
+   <link href="http://iequalsi.com/2013/01/09/promises-and-polyfills"/>
+   <updated>2013-01-09T00:00:00-05:00</updated>
+   <id>http://iequalsi.com/2013/01/09/promises-and-polyfills</id>
+   <content type="html"></content>
+ </entry>
+ 
+ <entry>
+   <title>promises promises</title>
+   <link href="http://iequalsi.com/2013/01/05/promises-promises"/>
+   <updated>2013-01-05T00:00:00-05:00</updated>
+   <id>http://iequalsi.com/2013/01/05/promises-promises</id>
+   <content type="html"></content>
+ </entry>
+ 
+ <entry>
    <title>New Learning</title>
    <link href="http://iequalsi.com/market/2013/01/02/new-learning"/>
    <updated>2013-01-02T00:00:00-05:00</updated>
    <id>http://iequalsi.com/market/2013/01/02/new-learning</id>
-   <content type="html">&lt;p&gt;Testing juan two juan two three&lt;/p&gt;
-&lt;!-- Start of Brightcove Player --&gt;&lt;div style=&#39;display:none&#39;&gt;
-
-&lt;/div&gt;&lt;div class=&#39;player-block&#39;&gt;
-  &lt;!--
-  By use of this code snippet, I agree to the Brightcove Publisher T and C 
-  found at https://accounts.brightcove.com/en/terms-and-conditions/. 
-  --&gt;
-  &lt;script language=&#39;JavaScript&#39; src=&#39;http://admin.brightcove.com/js/BrightcoveExperiences.js&#39; type=&#39;text/javascript&#39;&gt;
-  &lt;/script&gt;
-&lt;object class=&#39;BrightcoveExperience&#39; id=&#39;myExperience2324529428001&#39;&gt;
-  &lt;param name=&#39;bgcolor&#39; value=&#39;#FFFFFF&#39; /&gt;
-  &lt;param name=&#39;width&#39; value=&#39;486&#39; /&gt;
-  &lt;param name=&#39;height&#39; value=&#39;412&#39; /&gt;
-  &lt;param name=&#39;playerID&#39; value=&#39;2325817616001&#39; /&gt;
-  &lt;param name=&#39;playerKey&#39; value=&#39;AQ~~,AAACHKYez-k~,_n6slaY2OpZUaKTVg9meWbzidKssfE7w&#39; /&gt;
-  &lt;param name=&#39;isVid&#39; value=&#39;true&#39; /&gt;
-  &lt;param name=&#39;isUI&#39; value=&#39;true&#39; /&gt;
-  &lt;param name=&#39;dynamicStreaming&#39; value=&#39;true&#39; /&gt;
-  &lt;param name=&#39;includeAPI&#39; value=&#39;true&#39; /&gt;
-  &lt;param name=&#39;templateLoadHandler&#39; value=&#39;BCLS.onTemplateLoad&#39; /&gt;
-  &lt;param name=&#39;templateReadyHandler&#39; value=&#39;BCLS.onTemplateReady&#39; /&gt;
-  &lt;param name=&#39;@videoPlayer&#39; value=&#39;2324529428001&#39; /&gt;
-&lt;/object&gt;
-
-
-
-  &lt;!-- End of Brightcove Player --&gt;
-&lt;/div&gt;&lt;p id=&#39;videoName&#39;&gt;Currently watching: &lt;strong&gt;Bird_Titmouse&lt;/strong&gt;&lt;/p&gt;&lt;p id=&#39;progress&#39;&gt;Video Progress: &lt;span id=&#39;progressBar&#39; /&gt;&lt;/p&gt;</content>
+   <content type="html"></content>
  </entry>
  
  <entry>
@@ -161,6 +254,30 @@ b = Thread.new {
    <link href="http://iequalsi.com/lesson/2013/01/01/twenty-bakers-doz"/>
    <updated>2013-01-01T00:00:00-05:00</updated>
    <id>http://iequalsi.com/lesson/2013/01/01/twenty-bakers-doz</id>
+   <content type="html"></content>
+ </entry>
+ 
+ <entry>
+   <title>javascript review</title>
+   <link href="http://iequalsi.com/2012/12/23/javascript-review"/>
+   <updated>2012-12-23T00:00:00-05:00</updated>
+   <id>http://iequalsi.com/2012/12/23/javascript-review</id>
+   <content type="html"></content>
+ </entry>
+ 
+ <entry>
+   <title>javascript review</title>
+   <link href="http://iequalsi.com/2012/12/21/javascript-review"/>
+   <updated>2012-12-21T00:00:00-05:00</updated>
+   <id>http://iequalsi.com/2012/12/21/javascript-review</id>
+   <content type="html"></content>
+ </entry>
+ 
+ <entry>
+   <title>back to school</title>
+   <link href="http://iequalsi.com/2012/12/19/back-to-school"/>
+   <updated>2012-12-19T00:00:00-05:00</updated>
+   <id>http://iequalsi.com/2012/12/19/back-to-school</id>
    <content type="html"></content>
  </entry>
  
@@ -189,6 +306,14 @@ b = Thread.new {
  </entry>
  
  <entry>
+   <title>google maps service fees</title>
+   <link href="http://iequalsi.com/2012/03/13/google-maps-service-fees"/>
+   <updated>2012-03-13T00:00:00-04:00</updated>
+   <id>http://iequalsi.com/2012/03/13/google-maps-service-fees</id>
+   <content type="html"></content>
+ </entry>
+ 
+ <entry>
    <title>Failing for the win</title>
    <link href="http://iequalsi.com/2012/03/03/failing-for-the-win"/>
    <updated>2012-03-03T00:00:00-05:00</updated>
@@ -203,6 +328,14 @@ b = Thread.new {
    <link href="http://iequalsi.com/2011/12/14/Startups"/>
    <updated>2011-12-14T00:00:00-05:00</updated>
    <id>http://iequalsi.com/2011/12/14/Startups</id>
+   <content type="html"></content>
+ </entry>
+ 
+ <entry>
+   <title>hyperloco</title>
+   <link href="http://iequalsi.com/2011/03/11/hyperloco"/>
+   <updated>2011-03-11T00:00:00-05:00</updated>
+   <id>http://iequalsi.com/2011/03/11/hyperloco</id>
    <content type="html"></content>
  </entry>
  
@@ -288,6 +421,14 @@ b = Thread.new {
 &lt;p&gt;Unfortunately there are plenty of times that there is more money then time&lt;/p&gt;
 
 &lt;p&gt;So I’m annoyed that the community still fails to produce products that are GPLd that have anything but a suggested market value. So because of that one of my new years resolutions is to produce at least one non-gratis free product.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>nanowrimo again</title>
+   <link href="http://iequalsi.com/2010/11/01/nanowrimo-again"/>
+   <updated>2010-11-01T00:00:00-04:00</updated>
+   <id>http://iequalsi.com/2010/11/01/nanowrimo-again</id>
+   <content type="html"></content>
  </entry>
  
  <entry>
