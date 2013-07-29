@@ -2,18 +2,10 @@
 http://iequalsi.com/atom.xml
 http://iequalsi.com/categories.html
 http://iequalsi.com/classes/essential_ruby_rails.html
-http://iequalsi.com/index.html
 http://iequalsi.com/pages/resume.html
 http://iequalsi.com/pages.html
 http://iequalsi.com/sitemap.txt
 http://iequalsi.com/tags.html
-http://iequalsi.com/page2/index.html
-http://iequalsi.com/page3/index.html
-http://iequalsi.com/page4/index.html
-http://iequalsi.com/page5/index.html
-http://iequalsi.com/page6/index.html
-http://iequalsi.com/page7/index.html
-http://iequalsi.com/page8/index.html
 
 http://iequalsi.com/2013/07/21/makerpath
 http://iequalsi.com/2013/07/20/node-version-manager

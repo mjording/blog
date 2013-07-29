@@ -7,11 +7,7 @@ tagline: (i=i)
 
   {% for post in paginator.posts %}
   <article>
-<<<<<<< HEAD
-     <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-=======
      <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
->>>>>>> 9da737858bfc2b8c2bfca842a62b6f7d74fa550b
       <h6 class="date">{{post.date | date_to_string }}<span
           class="author"> -  Matthew Jording</span></h6>
     <div class="content">
