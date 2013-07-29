@@ -3,8 +3,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Rails 4</title>
-    <meta name="description" content="">
+    <title></title>
+    
     <meta name="author" content="Matthew Jording">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
@@ -106,13 +106,49 @@
 
       <div class="content">
         
-<div class="page-header">
-  <h3>Rails 4 <small>(i=i)</small></h3>
-</div>
 
 <div class="row">
-  <div class="span8">
-    <p>Rails 4, is on deck. Is your application ready for it? Big changes afoot. Good ones for the most part.</p>
+  <div class="span12">
+    
+
+  
+  <article>
+     <h3><a href="/2013/07/05/bricktronics-board">bricktronics board</a></h3>
+      <h6 class="date">05 Jul 2013<span
+          class="author"> -  Matthew Jording</span></h6>
+    <div class="content">
+      
+    </div>
+  </article>
+ 
+  <article>
+     <h3><a href="/2013/07/04/education-vs-content">education vs content</a></h3>
+      <h6 class="date">04 Jul 2013<span
+          class="author"> -  Matthew Jording</span></h6>
+    <div class="content">
+      
+    </div>
+  </article>
+ 
+  <article>
+     <h3><a href="/2013/04/30/tc-disrupt-ny-hackathon-yr-4-postmortem">TC Disrupt NY Hackathon yr 4, postmortem</a></h3>
+      <h6 class="date">30 Apr 2013<span
+          class="author"> -  Matthew Jording</span></h6>
+    <div class="content">
+      <p>This weekend the 4th New York TechCrunch Disrupt conference is happening. Every year Disrupt is proceeded by a 24 hour hack-a-thon, and as with every year before I rallied friends &amp; colleagues to go without sleep and produce questionable code in challenging environments.</p>
+
+<p>The hack-a-thon is startup bootstraping accelerated. Finding collaborators, discovering market, communicating vision, and where I generally land, engineering a solution.</p>
+
+<p>The full reveal is going to come in a couple of posts after a full assessment of technical debt.</p>
+    </div>
+  </article>
+ 
+  <article>
+     <h3><a href="/2013/04/28/rails-4">Rails 4</a></h3>
+      <h6 class="date">28 Apr 2013<span
+          class="author"> -  Matthew Jording</span></h6>
+    <div class="content">
+      <p>Rails 4, is on deck. Is your application ready for it? Big changes afoot. Good ones for the most part.</p>
 
 <ul>
 <li>Rails 4 requires Ruby &gt;= 1.9.3</li>
@@ -164,77 +200,37 @@ Threadsafe Rails </code></pre>
     <span class='p'>}</span>
 <span class='p'>}</span>
 </code></pre></div>
-    <div class="pagination">
-      <ul>
-      
-        <li class="prev"><a href="/2013/04/20/emberjs" title="Emberjs">&larr; Previous</a></li>
-      
-        <li>
-        <!--<a href="/archive.html">Archive</a>-->
-        </li>
-      
-        <li class="next"><a href="/2013/04/30/tc-disrupt-ny-hackathon-yr-4-postmortem" title="TC Disrupt NY Hackathon yr 4, postmortem">Next &rarr;</a></li>
-      
-      </ul>
     </div>
-    
-  </div>
+  </article>
+ 
+  <article>
+     <h3><a href="/2013/04/20/emberjs">Emberjs</a></h3>
+      <h6 class="date">20 Apr 2013<span
+          class="author"> -  Matthew Jording</span></h6>
+    <div class="content">
+      
+    </div>
+  </article>
+ 
   
-  <div class="span4">
-    <div class="date">
-      <small>Published  </small><span>28 April 2013</span>
-    </div>
-
+ <ul class="pager">
     
+    <li>
+       
+         <a href="/">&larr; Previous</a> 
+       
+    </li>
+    
+    <span class="page_number">Page: 2 of 8</span>
+    
+    <li><a href="/page3">Next &rarr;</a></li>
+    
+  </ul>
+</div>
+
   </div>
 </div>
 
-<script>
-var BCLS = (function() {
-  // variable
-  var eProgress = document.getElementById("progress"),
-      player,
-      APIModules,
-      adEvent,
-      captionsEvent,
-      contentEvent,
-      cuePointEvent,
-      mediaEvent,
-      videoPlayer,
-      eProgressBar = document.getElementById("progressBar"),
-      eVideoName = document.getElementById("videoName");
-  return {
-    onTemplateLoad : function (experienceID) {
-      // get a reference to the player and API Modules and Events
-      player = brightcove.api.getExperience(experienceID);
-      APIModules = brightcove.api.modules.APIModules;
-      adEvent = brightcove.api.events.AdEvent;
-      captionsEvent = brightcove.api.events.CaptionsEvent;
-      contentEvent = brightcove.api.events.ContentEvent;
-      cuePointEvent = brightcove.api.events.CuePointEvent;
-      mediaEvent = brightcove.api.events.MediaEvent;
-    },
-    onTemplateReady : function (evt) {
-      // get references to modules
-      videoPlayer = player.getModule(APIModules.VIDEO_PLAYER);
-      // get the video data for the current video
-      videoPlayer.getCurrentVideo( function(videoDTO) {
-        eVideoName.innerHTML = "Currently watching: " + videoDTO.displayName + "";
-      } ); 
-
-      videoPlayer.addEventListener(mediaEvent.PROGRESS, BCLS.onProgress);
-    },
-    onProgress : function (evt) {
-      if ((evt.duration - evt.position) > .1) {
-        eProgressBar.innerHTML += "&nbsp;";
-      } else {
-        videoPlayer.removeEventListener(mediaEvent.PROGRESS, onProgress);
-        eProgress.innerHTML += " Video complete";
-      }
-    }
-  }
-}());
-</script>
 
       </div>
 

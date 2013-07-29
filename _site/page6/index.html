@@ -3,8 +3,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Node Version Manager</title>
-    <meta name="description" content="">
+    <title></title>
+    
     <meta name="author" content="Matthew Jording">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
@@ -106,84 +106,78 @@
 
       <div class="content">
         
-<div class="page-header">
-  <h3>Node Version Manager <small>(i=i)</small></h3>
-</div>
 
 <div class="row">
-  <div class="span8">
+  <div class="span12">
     
-    <div class="pagination">
-      <ul>
-      
-        <li class="prev"><a href="/2013/07/19/requirejs--grunt" title="requirejs & grunt">&larr; Previous</a></li>
-      
-        <li>
-        <!--<a href="/archive.html">Archive</a>-->
-        </li>
-      
-        <li class="next"><a href="/2013/07/21/makerpath" title="makerpath">Next &rarr;</a></li>
-      
-      </ul>
-    </div>
-    
-  </div>
-  
-  <div class="span4">
-    <div class="date">
-      <small>Published  </small><span>20 July 2013</span>
-    </div>
 
+  
+  <article>
+     <h3><a href="/2012/12/18/skillshare-course">Skillshare course</a></h3>
+      <h6 class="date">18 Dec 2012<span
+          class="author"> -  Matthew Jording</span></h6>
+    <div class="content">
+      
+    </div>
+  </article>
+ 
+  <article>
+     <h3><a href="/2012/10/30/the-new-new-york-economy">The New New York Economy</a></h3>
+      <h6 class="date">30 Oct 2012<span
+          class="author"> -  Matthew Jording</span></h6>
+    <div class="content">
+      
+    </div>
+  </article>
+ 
+  <article>
+     <h3><a href="/2012/06/02/backbonejs">Backbone.js</a></h3>
+      <h6 class="date">02 Jun 2012<span
+          class="author"> -  Matthew Jording</span></h6>
+    <div class="content">
+      
+    </div>
+  </article>
+ 
+  <article>
+     <h3><a href="/2012/03/13/google-maps-service-fees">google maps service fees</a></h3>
+      <h6 class="date">13 Mar 2012<span
+          class="author"> -  Matthew Jording</span></h6>
+    <div class="content">
+      
+    </div>
+  </article>
+ 
+  <article>
+     <h3><a href="/2012/03/03/failing-for-the-win">Failing for the win</a></h3>
+      <h6 class="date">03 Mar 2012<span
+          class="author"> -  Matthew Jording</span></h6>
+    <div class="content">
+      <p>If Agile methods of application development is what you takeaway from Lean startups, you are doing it wrong.</p>
+
+<p>The Lean startup teaches agile teams business leaders to focus on creating competitive products/services. This in deference to focusing on on creating a product that will compete in its target market.</p>
+    </div>
+  </article>
+ 
+  
+ <ul class="pager">
     
+    <li>
+       
+        <a href="/page5">&larr; Previous</a></li>
+       
+    </li>
+    
+    <span class="page_number">Page: 6 of 8</span>
+    
+    <li><a href="/page7">Next &rarr;</a></li>
+    
+  </ul>
+</div>
+
   </div>
 </div>
 
-<script>
-var BCLS = (function() {
-  // variable
-  var eProgress = document.getElementById("progress"),
-      player,
-      APIModules,
-      adEvent,
-      captionsEvent,
-      contentEvent,
-      cuePointEvent,
-      mediaEvent,
-      videoPlayer,
-      eProgressBar = document.getElementById("progressBar"),
-      eVideoName = document.getElementById("videoName");
-  return {
-    onTemplateLoad : function (experienceID) {
-      // get a reference to the player and API Modules and Events
-      player = brightcove.api.getExperience(experienceID);
-      APIModules = brightcove.api.modules.APIModules;
-      adEvent = brightcove.api.events.AdEvent;
-      captionsEvent = brightcove.api.events.CaptionsEvent;
-      contentEvent = brightcove.api.events.ContentEvent;
-      cuePointEvent = brightcove.api.events.CuePointEvent;
-      mediaEvent = brightcove.api.events.MediaEvent;
-    },
-    onTemplateReady : function (evt) {
-      // get references to modules
-      videoPlayer = player.getModule(APIModules.VIDEO_PLAYER);
-      // get the video data for the current video
-      videoPlayer.getCurrentVideo( function(videoDTO) {
-        eVideoName.innerHTML = "Currently watching: " + videoDTO.displayName + "";
-      } ); 
-
-      videoPlayer.addEventListener(mediaEvent.PROGRESS, BCLS.onProgress);
-    },
-    onProgress : function (evt) {
-      if ((evt.duration - evt.position) > .1) {
-        eProgressBar.innerHTML += "&nbsp;";
-      } else {
-        videoPlayer.removeEventListener(mediaEvent.PROGRESS, onProgress);
-        eProgress.innerHTML += " Video complete";
-      }
-    }
-  }
-}());
-</script>
 
       </div>
 

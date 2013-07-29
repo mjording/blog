@@ -3,8 +3,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Node Version Manager</title>
-    <meta name="description" content="">
+    <title></title>
+    
     <meta name="author" content="Matthew Jording">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
@@ -106,84 +106,76 @@
 
       <div class="content">
         
-<div class="page-header">
-  <h3>Node Version Manager <small>(i=i)</small></h3>
-</div>
 
 <div class="row">
-  <div class="span8">
+  <div class="span12">
     
-    <div class="pagination">
-      <ul>
-      
-        <li class="prev"><a href="/2013/07/19/requirejs--grunt" title="requirejs & grunt">&larr; Previous</a></li>
-      
-        <li>
-        <!--<a href="/archive.html">Archive</a>-->
-        </li>
-      
-        <li class="next"><a href="/2013/07/21/makerpath" title="makerpath">Next &rarr;</a></li>
-      
-      </ul>
-    </div>
-    
-  </div>
-  
-  <div class="span4">
-    <div class="date">
-      <small>Published  </small><span>20 July 2013</span>
-    </div>
 
+  
+  <article>
+     <h3><a href="/2013/03/02/teaching-ruby-on-rails">Teaching Ruby on Rails</a></h3>
+      <h6 class="date">02 Mar 2013<span
+          class="author"> -  Matthew Jording</span></h6>
+    <div class="content">
+      
+    </div>
+  </article>
+ 
+  <article>
+     <h3><a href="/2013/01/20/d3js">D3.js</a></h3>
+      <h6 class="date">20 Jan 2013<span
+          class="author"> -  Matthew Jording</span></h6>
+    <div class="content">
+      
+    </div>
+  </article>
+ 
+  <article>
+     <h3><a href="/2013/01/14/assesment">assesment</a></h3>
+      <h6 class="date">14 Jan 2013<span
+          class="author"> -  Matthew Jording</span></h6>
+    <div class="content">
+      
+    </div>
+  </article>
+ 
+  <article>
+     <h3><a href="/2013/01/09/promises-and-polyfills">promises and polyfills</a></h3>
+      <h6 class="date">09 Jan 2013<span
+          class="author"> -  Matthew Jording</span></h6>
+    <div class="content">
+      
+    </div>
+  </article>
+ 
+  <article>
+     <h3><a href="/2013/01/05/promises-promises">promises promises</a></h3>
+      <h6 class="date">05 Jan 2013<span
+          class="author"> -  Matthew Jording</span></h6>
+    <div class="content">
+      
+    </div>
+  </article>
+ 
+  
+ <ul class="pager">
     
+    <li>
+       
+        <a href="/page3">&larr; Previous</a></li>
+       
+    </li>
+    
+    <span class="page_number">Page: 4 of 8</span>
+    
+    <li><a href="/page5">Next &rarr;</a></li>
+    
+  </ul>
+</div>
+
   </div>
 </div>
 
-<script>
-var BCLS = (function() {
-  // variable
-  var eProgress = document.getElementById("progress"),
-      player,
-      APIModules,
-      adEvent,
-      captionsEvent,
-      contentEvent,
-      cuePointEvent,
-      mediaEvent,
-      videoPlayer,
-      eProgressBar = document.getElementById("progressBar"),
-      eVideoName = document.getElementById("videoName");
-  return {
-    onTemplateLoad : function (experienceID) {
-      // get a reference to the player and API Modules and Events
-      player = brightcove.api.getExperience(experienceID);
-      APIModules = brightcove.api.modules.APIModules;
-      adEvent = brightcove.api.events.AdEvent;
-      captionsEvent = brightcove.api.events.CaptionsEvent;
-      contentEvent = brightcove.api.events.ContentEvent;
-      cuePointEvent = brightcove.api.events.CuePointEvent;
-      mediaEvent = brightcove.api.events.MediaEvent;
-    },
-    onTemplateReady : function (evt) {
-      // get references to modules
-      videoPlayer = player.getModule(APIModules.VIDEO_PLAYER);
-      // get the video data for the current video
-      videoPlayer.getCurrentVideo( function(videoDTO) {
-        eVideoName.innerHTML = "Currently watching: " + videoDTO.displayName + "";
-      } ); 
-
-      videoPlayer.addEventListener(mediaEvent.PROGRESS, BCLS.onProgress);
-    },
-    onProgress : function (evt) {
-      if ((evt.duration - evt.position) > .1) {
-        eProgressBar.innerHTML += "&nbsp;";
-      } else {
-        videoPlayer.removeEventListener(mediaEvent.PROGRESS, onProgress);
-        eProgress.innerHTML += " Video complete";
-      }
-    }
-  }
-}());
-</script>
 
       </div>
 
