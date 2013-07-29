@@ -12,8 +12,8 @@ this year, is rising from the ashes with another iteration and
 potentially a first release. I'll be posting updates on what it's like
 to revive a hack with spit, polish, and a dash of best practices. 
 
-### Intent: 
-#### Personalized suggestions of best path to a learning goal. 
+
+#### Intent: Personalized suggestions of best path to a learning goal. 
 
 ##### Challenges toward goal:
 * Catalog of learning resources. 

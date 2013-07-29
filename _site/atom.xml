@@ -4,7 +4,7 @@
  <title>Matthew Jording</title>
  <link href="http://iequalsi.com/atom.xml" rel="self"/>
  <link href="http://iequalsi.com"/>
- <updated>2013-07-29T17:12:26-04:00</updated>
+ <updated>2013-07-29T17:15:23-04:00</updated>
  <id>http://iequalsi.com</id>
  <author>
    <name>Matthew Jording</name>
@@ -19,9 +19,7 @@
    <id>http://iequalsi.com/2013/07/21/makerpath</id>
    <content type="html">&lt;p&gt;MakerPath, the hack I had started at the NYC TechCrunch Disrupt Hackfest this year, is rising from the ashes with another iteration and potentially a first release. I&amp;#8217;ll be posting updates on what it&amp;#8217;s like to revive a hack with spit, polish, and a dash of best practices.&lt;/p&gt;
 
-&lt;h3 id=&#39;intent&#39;&gt;Intent:&lt;/h3&gt;
-
-&lt;h4 id=&#39;personalized_suggestions_of_best_path_to_a_learning_goal&#39;&gt;Personalized suggestions of best path to a learning goal.&lt;/h4&gt;
+&lt;h4 id=&#39;intent_personalized_suggestions_of_best_path_to_a_learning_goal&#39;&gt;Intent: Personalized suggestions of best path to a learning goal.&lt;/h4&gt;
 
 &lt;h5 id=&#39;challenges_toward_goal&#39;&gt;Challenges toward goal:&lt;/h5&gt;
 
